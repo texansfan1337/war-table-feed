@@ -70,6 +70,12 @@ h2 small{font:13px "IBM Plex Mono",monospace;color:var(--faint)}
 .bar i.on{background:var(--ember)}
 .bar i.cap{outline:1px solid var(--brass)}
 .note{color:var(--mute);font-size:14px;margin:0 0 14px}
+.mapbar{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;justify-content:space-between;margin-bottom:10px}
+.mapframe{width:100%;height:calc(100vh - 140px);min-height:520px;border:1px solid var(--line);border-radius:6px;background:var(--card);display:block}
+.mapnote{font-size:13px;color:var(--mute)}
+.mapnote a{color:var(--ember)}
+.maplink{font:500 11px "IBM Plex Mono",monospace;letter-spacing:.06em;text-transform:uppercase;border:1px solid var(--line);border-radius:3px;padding:1px 6px;background:none;color:var(--ember);cursor:pointer}
+.maplink:hover{border-color:var(--ember)}
 .empty{color:var(--mute);padding:24px;border:1px dashed var(--line);border-radius:6px;text-align:center}
 .err{color:var(--s-failed)}
 [hidden]{display:none!important}
@@ -93,10 +99,12 @@ h2 small{font:13px "IBM Plex Mono",monospace;color:var(--faint)}
     <button role="tab" data-tab="done" aria-selected="false">Completed</button>
     <button role="tab" data-tab="factions" aria-selected="false">Factions</button>
     <button role="tab" data-tab="pursuits" aria-selected="false">Pursuits</button>
+    <button role="tab" data-tab="maps" aria-selected="false">Maps</button>
   </nav>
 
   <div class="filters" id="filters"></div>
   <main id="view"></main>
+  <section id="mapView" hidden></section>
 </div>
 
 <script>
@@ -105,6 +113,12 @@ const CAT_LABEL = Object.fromEntries(CATS.map(([k,v])=>[k,v.replace(/s$/,"")]));
 const STATUS = {active:"Active",rumored:"Rumored",dormant:"Dormant",resolved:"Completed",failed:"Failed"};
 const OPEN = ["active","rumored","dormant"];
 let S = null, tab = "open", who = "all";
+const MAPS = [
+  {id: "neverwinter", name: "Neverwinter", region: "neverwinter", path: "maps/neverwinter.html", blurb: "Districts, shops and landmarks. Click a district, or zoom in to see shops."}
+];
+let mapId = MAPS[0].id;
+const mapFor = region => MAPS.find(m => m.region === region);
+function openMap(id) { mapId = id; tab = "maps"; render(); window.scrollTo(0, 0); }
 
 const el = (t, a = {}, ...kids) => {
   const n = document.createElement(t);
@@ -132,7 +146,8 @@ function quest(q) {
     q.lead ? el("p", {class: "lead"}, el("b", {}, "Lead"), q.lead) : null,
     el("div", {class: "foot"},
       el("span", {}, (q.owners || []).map(charName).join(" · ") + (q.giver ? ` — from ${q.giver}` : "")),
-      el("span", {}, [regionName(q.region), q.lastSession ? `S${q.lastSession}` : ""].filter(Boolean).join(" · "))));
+      el("span", {}, [regionName(q.region), q.lastSession ? `S${q.lastSession}` : ""].filter(Boolean).join(" · "),
+        mapFor(q.region) ? [" ", el("button", {class: "maplink", type: "button", title: `Open the ${mapFor(q.region).name} map`, onclick: () => openMap(mapFor(q.region).id)}, "Map")] : null)));
 }
 
 function renderFilters() {
@@ -203,8 +218,26 @@ function renderPursuits(v) {
   })));
 }
 
+function renderMaps() {
+  const box = document.getElementById("mapView");
+  if (box.dataset.map === mapId) return; /* keep the loaded map when the board refreshes */
+  const m = MAPS.find(x => x.id === mapId) || MAPS[0];
+  box.dataset.map = m.id;
+  box.replaceChildren(
+    el("div", {class: "mapbar"},
+      el("div", {class: "filters", style: "margin:0"}, MAPS.map(x => el("button", {class: "chip", "aria-pressed": String(x.id === m.id), onclick: () => { mapId = x.id; renderMaps(); }}, x.name))),
+      el("span", {class: "mapnote"}, m.blurb + " ", el("a", {href: m.path, target: "_blank", rel: "noopener"}, "Open full page"))),
+    el("iframe", {class: "mapframe", src: m.path, title: `${m.name} map`}));
+}
+
 function render() {
   document.querySelectorAll("nav button").forEach(b => b.setAttribute("aria-selected", String(b.dataset.tab === tab)));
+  const onMaps = tab === "maps";
+  document.getElementById("view").hidden = onMaps;
+  document.getElementById("mapView").hidden = !onMaps;
+  document.getElementById("filters").hidden = onMaps;
+  if (onMaps) { history.replaceState(null, "", "#map=" + mapId); return renderMaps(); }
+  if (location.hash.startsWith("#map=")) history.replaceState(null, "", location.pathname);
   renderFilters();
   const v = document.getElementById("view");
   v.replaceChildren();
@@ -235,6 +268,7 @@ async function load() {
     if (!S) document.getElementById("meta").replaceChildren(el("span", {class: "err"}, "The board couldn't be loaded. Try again shortly."));
   }
 }
+if (location.hash.startsWith("#map=")) { const id = location.hash.slice(5); if (MAPS.some(m => m.id === id)) { mapId = id; tab = "maps"; } }
 load();
 setInterval(load, 5 * 60 * 1000);
 </script>

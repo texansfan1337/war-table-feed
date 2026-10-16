@@ -12,3 +12,7 @@ The Discord bot polls `snapshot.json` in this repo every 5 minutes. This is how 
    - Otherwise it writes a new snapshot with an automatic player-safe changelog (new, completed, updated and removed quest titles; date change). Pass `--changes-file` instead to supply your own changelog after an approved recap.
 4. Check for leaks: `grep -ciE '"truth"|"trigger"|"pointsTo"' snapshot.json` must print 0.
 5. Commit `snapshot.json` and push to `main`.
+
+## Maps
+
+`maps/` holds copies of the campaign's map pages, shown on the player board's Maps tab (`MAPS` list in `index.html`). When a map artifact changes, copy the new page over its file here (and into the War Table) so the copies don't go stale. The hourly sync never touches `maps/`.

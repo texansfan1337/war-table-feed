@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated": "2026-10-16T22:51:43+00:00",
+  "generated": "2026-10-16T23:15:57+00:00",
   "warTableUrl": "https://texansfan1337.github.io/war-table-feed/",
   "calendar": {
     "label": "20 Kythorn 1487 DR",
@@ -766,29 +766,15 @@
       "id": "carver-ring-reading",
       "pc": "carver",
       "kind": "magistone",
-      "title": "Attunement: reading raw stone",
+      "title": "Magistone dowsing (the ring)",
       "pickLabel": "Raw stone, any grade",
-      "filled": 0,
+      "filled": 6,
       "total": 6,
       "needDays": 30,
-      "doneDays": 2,
+      "doneDays": 30,
       "untracked": false,
-      "status": "active",
+      "status": "complete",
       "teacher": ""
-    },
-    {
-      "id": "carver-soul-splitting",
-      "pc": "carver",
-      "kind": "other",
-      "title": "Soul-splitting",
-      "pickLabel": "",
-      "filled": 0,
-      "total": 10,
-      "needDays": 50,
-      "doneDays": 0,
-      "untracked": false,
-      "status": "paused",
-      "teacher": "Introduction owed on completion of the Grenholm Contract"
     },
     {
       "id": "gustav-calligraphy",
@@ -889,17 +875,45 @@
       "teacher": ""
     },
     {
+      "id": "varsen-skill-expert-asi",
+      "pc": "varsen",
+      "kind": "feat",
+      "title": "Skill Expert 3/3: +1 ability score",
+      "pickLabel": "Skill Expert",
+      "filled": 0,
+      "total": 10,
+      "needDays": 50,
+      "doneDays": 0,
+      "untracked": false,
+      "status": "active",
+      "teacher": ""
+    },
+    {
+      "id": "varsen-skill-expert-expertise",
+      "pc": "varsen",
+      "kind": "feat",
+      "title": "Skill Expert 2/3: Expertise",
+      "pickLabel": "Skill Expert",
+      "filled": 0,
+      "total": 10,
+      "needDays": 50,
+      "doneDays": 0,
+      "untracked": false,
+      "status": "active",
+      "teacher": ""
+    },
+    {
       "id": "varsen-smithing",
       "pc": "varsen",
       "kind": "training",
-      "title": "Smith's tools",
+      "title": "Skill Expert 1/3: Smith's tools proficiency",
       "pickLabel": "Smith's tools",
-      "filled": 1,
+      "filled": 10,
       "total": 10,
       "needDays": 50,
-      "doneDays": 9,
+      "doneDays": 50,
       "untracked": false,
-      "status": "active",
+      "status": "complete",
       "teacher": "His father's lessons, from memory"
     },
     {
@@ -917,11 +931,10 @@
       "teacher": "Carver"
     }
   ],
-  "changesTitle": "Downtime pursuits added",
+  "changesTitle": "Pursuits updated",
   "changes": [
-    "13 downtime pursuits are now on the board, tracked in workweeks by Xanathar's rules",
-    "In progress: Varsen's smithing and stone carving, Carver's raw-stone attunement, Onotaro's Magistone craft",
-    "Use /pursuits to see everyone's progress"
+    "Carver: Magistone dowsing complete",
+    "Varsen: Skill Expert split into three parts; Smith's tools proficiency done, expertise and +1 ability score in progress"
   ],
-  "changesId": "eecf3bc4ed44"
+  "changesId": "45997658c830"
 }

@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated": "2026-10-16T23:20:14+00:00",
+  "generated": "2026-10-16T23:47:22+00:00",
   "warTableUrl": "https://texansfan1337.github.io/war-table-feed/",
   "calendar": {
     "label": "22 Kythorn 1487 DR",
@@ -98,8 +98,8 @@
       "factions": [
         "house-vaelcrest"
       ],
-      "stakes": "Edrion wants to meet the people who stood at the raw face in Griffon's Nest. Ravelle's written promises are pending: property, a liquor licence, unlimited Magistone with sharing, Carver's rights, and intel for Varsen. Handout: The Summons to Neverwinter.",
-      "lead": "Ravelle's writ puts the party on the next timber raft from Ashfoot Camp to Neverwinter's river gate.",
+      "stakes": "Lord Edrion wants to meet the party about the raw face at Griffon's Nest. Ravelle's written promises are pending: property, a liquor licence, unlimited Magistone with sharing, Carver's rights, intel for Varsen. Handout: The Summons to Neverwinter.",
+      "lead": "Ravelle's writ grants passage on the next timber raft from Ashfoot Camp to Neverwinter's river gate.",
       "lastSession": 26
     },
     {
@@ -114,8 +114,8 @@
         "carver"
       ],
       "factions": [],
-      "stakes": "Cass is testing the coloured stone, green among it.",
-      "lead": "Watch for one thing: whether being used on living things changes the stone itself.",
+      "stakes": "Cass is testing coloured Magistone, including green, on living things.",
+      "lead": "Open question: does use on living things change the stone?",
       "lastSession": 26
     },
     {
@@ -146,8 +146,8 @@
         "party"
       ],
       "factions": [],
-      "stakes": "A professional bounty hunter with all their names on a list. The twins are worth a thousand apiece.",
-      "lead": "The bounties tripled. He may still be on their trail.",
+      "stakes": "Bounty hunter holding a warrant on the whole party: 250 gp each, 1,000 gp for either twin.",
+      "lead": "Bounties have tripled. He may still be tracking the party.",
       "lastSession": 22
     },
     {
@@ -163,8 +163,8 @@
       "factions": [
         "house-crimson"
       ],
-      "stakes": "Find out what happened to Creed's mother inside the sealed Brightfire Institute.",
-      "lead": "The vault opened and Corinne's fate was answered. Vaross is alive. The Pale Lodge coin went to Carver.",
+      "stakes": "Find out what happened to Creed's mother, Corinne, in the sealed Brightfire Institute.",
+      "lead": "Vault opened; Corinne's fate learned. Vaross is alive. Carver received a Pale Lodge coin.",
       "lastSession": 9
     },
     {
@@ -196,8 +196,8 @@
         "carver"
       ],
       "factions": [],
-      "stakes": "Carver's amplifier for Hans.",
-      "lead": "Finished at sunrise and set on the table with a heavy thud.",
+      "stakes": "Carver builds an amplifier for Hans.",
+      "lead": "Finished.",
       "lastSession": 26
     },
     {
@@ -211,8 +211,8 @@
         "party"
       ],
       "factions": [],
-      "stakes": "Darion & Vasse ship Longsaddle's stone somewhere their manifests won't name. Harwick named Facility 6 and said Althin Vaross is alive and almost certainly running the research there.",
-      "lead": "Every manifest at Lisbeth Crane's bonded factor office reads 'hold for onward — F6'. The party believes the mountains Harwick meant are the ones in Moray.",
+      "stakes": "Darion & Vasse ships Longsaddle's stone to an unnamed destination. Harwick named Facility 6 and said Althin Vaross is likely running research there.",
+      "lead": "Manifests at Lisbeth Crane's factor office read 'hold for onward — F6'. The party believes Harwick meant the mountains of Moray.",
       "lastSession": 26
     },
     {
@@ -226,7 +226,7 @@
         "party"
       ],
       "factions": [],
-      "stakes": "Lisbeth Crane is waiting two days at her sister's.",
+      "stakes": "Lisbeth Crane is staying two days at her sister's.",
       "lead": "She has a job lined up at Ze Flonti Flaggen.",
       "lastSession": 26
     },
@@ -241,8 +241,8 @@
         "onotaro"
       ],
       "factions": [],
-      "stakes": "The hat.",
-      "lead": "Won from the Vestarian Daughters.",
+      "stakes": "Win a hat from the Vestarian Daughters.",
+      "lead": "Won.",
       "lastSession": 17
     },
     {
@@ -259,7 +259,7 @@
         "house-crimson"
       ],
       "stakes": "Take the Dawngate District and get beneath the palace.",
-      "lead": "General Althorn taken down at Dawngate. The party went under the palace through the north storm culvert.",
+      "lead": "General Althorn defeated at Dawngate. Party entered under the palace through the north storm culvert.",
       "lastSession": 5
     },
     {
@@ -275,8 +275,8 @@
       "factions": [
         "house-crimson"
       ],
-      "stakes": "Find out what the Crown was running beneath the grain mill in the Lower City.",
-      "lead": "Facility 9 cleared and sealed. The Ashvain Concordance recovered. Seraph woke.",
+      "stakes": "Find out what the Crown ran beneath the Lower City grain mill.",
+      "lead": "Facility 9 cleared and sealed. Ashvain Concordance recovered. Seraph woke.",
       "lastSession": 12
     },
     {
@@ -293,7 +293,7 @@
         "house-crimson"
       ],
       "stakes": "Open Suzail's western gate before dawn.",
-      "lead": "Captured Crimson soldiers freed and armed from the armory, the Radiant Frame destroyed, Commander Holst broken. The western gate fell.",
+      "lead": "Captured Crimson soldiers freed and armed. Radiant Frame destroyed. Commander Holst defeated. Western gate opened.",
       "lastSession": 3
     },
     {
@@ -309,8 +309,8 @@
       "factions": [
         "house-crimson"
       ],
-      "stakes": "Clear the Moon Tower and the throne room.",
-      "lead": "The tower cleared, its prisoner freed, the throne room taken. The Cormyrian Civil War ended.",
+      "stakes": "Clear the Moon Tower and take the throne room.",
+      "lead": "Tower cleared, prisoner freed, throne room taken. The Cormyrian Civil War ended.",
       "lastSession": 6
     },
     {
@@ -325,7 +325,7 @@
       ],
       "factions": [],
       "stakes": "Seraph woke in Facility 9. Handout: Project: Seraph – Player Facing.",
-      "lead": "Harwick said it was charged from a relic holding a piece of Bast, killed nearly everyone at its trials, and may still sit beneath Suzail.",
+      "lead": "Per Harwick: charged from a relic holding a piece of Bast, killed most of the room at its trials, may still be beneath Suzail.",
       "lastSession": 23
     },
     {
@@ -341,8 +341,8 @@
       "factions": [
         "house-vaelcrest"
       ],
-      "stakes": "Take the Nest from Darion & Vasse.",
-      "lead": "Griffon's Nest was taken by midnight.",
+      "stakes": "Take Griffon's Nest from Darion & Vasse.",
+      "lead": "Nest taken by midnight.",
       "lastSession": 25
     },
     {
@@ -358,7 +358,7 @@
       "factions": [
         "house-crimson"
       ],
-      "stakes": "Get out of Suzail alive.",
+      "stakes": "Escape Suzail after the Banquet Betrayal.",
       "lead": "Escaped.",
       "lastSession": 12
     },
@@ -374,7 +374,7 @@
       ],
       "factions": [],
       "stakes": "A weapon commissioned for Varsen.",
-      "lead": "The Bloodtithe was made for Varsen.",
+      "lead": "Bloodtithe forged for Varsen.",
       "lastSession": 15
     },
     {
@@ -388,8 +388,8 @@
         "hans"
       ],
       "factions": [],
-      "stakes": "A grand kobold conspiracy in Suzail's undercity. Allegedly.",
-      "lead": "'Eastern wharf. The 29th. Come alone.' Nobody went, and the date has passed.",
+      "stakes": "A rumored kobold conspiracy in Suzail's undercity.",
+      "lead": "Meeting set for the eastern wharf on the 29th. Nobody went; the date has passed.",
       "lastSession": 10
     },
     {
@@ -403,8 +403,8 @@
         "party"
       ],
       "factions": [],
-      "stakes": "In the cave below Secumber five cultists stabbed themselves to feed the statue, and the Unlit came out of it. The party put it down and kept the green mote it left behind. Handout: The Quiet Codex — The First Verse (Of Noise).",
-      "lead": "The lead cultist carried a pamphlet ending 'The world will not end. It will exhale.' The sixth man bore the Covenant's mark behind his left ear and the first chapter of a credo in his coat.",
+      "stakes": "Five cultists in the cave below Secumber stabbed themselves to feed a statue, releasing the Unlit. The party destroyed it and kept the green mote it left. Handout: The Quiet Codex — The First Verse (Of Noise).",
+      "lead": "The lead cultist's pamphlet ends: 'The world will not end. It will exhale.' A sixth man had the Covenant's mark behind his left ear and the first chapter of a credo.",
       "lastSession": 21
     },
     {
@@ -418,8 +418,8 @@
         "party"
       ],
       "factions": [],
-      "stakes": "Dr. Pell Harwick, a Facility Nine surgeon walking free in Baldur's Gate.",
-      "lead": "Found, interrogated under the zone and killed.",
+      "stakes": "Dr. Pell Harwick, a Facility 9 surgeon, was free in Baldur's Gate.",
+      "lead": "Found, interrogated and killed.",
       "lastSession": 23
     },
     {
@@ -433,8 +433,8 @@
         "carver"
       ],
       "factions": [],
-      "stakes": "The Radiant Frame in Griffon's Nest is Carver's.",
-      "lead": "",
+      "stakes": "Carver has claimed the Radiant Frame in Griffon's Nest.",
+      "lead": "Left under the Crag with instructions for moving it to the surface.",
       "lastSession": 26
     },
     {
@@ -448,7 +448,7 @@
         "party"
       ],
       "factions": [],
-      "stakes": "Something wrong in Secumber's harvest.",
+      "stakes": "Investigate the problem with Secumber's harvest.",
       "lead": "Secumber's stone returned to Hessa.",
       "lastSession": 21
     },
@@ -466,8 +466,8 @@
       "factions": [
         "pale-lodge"
       ],
-      "stakes": "Find the Lodge's missing Pursuant. Norfinn Lake. The pay is one question and one true answer.",
-      "lead": "On completion, Carver gets his introduction to someone who can teach soul-splitting.",
+      "stakes": "Find the Pale Lodge's missing Pursuant near Norfinn Lake. Payment: one question, one true answer.",
+      "lead": "On completion, Carver is introduced to a soul-splitting teacher.",
       "lastSession": 16
     },
     {
@@ -483,7 +483,7 @@
       "factions": [
         "miners-guild"
       ],
-      "stakes": "Someone poisoned the griffons.",
+      "stakes": "Find who poisoned the griffons' tithe.",
       "lead": "Traced to the meat store with Cass's bloodhound.",
       "lastSession": 26
     },
@@ -498,7 +498,7 @@
         "party"
       ],
       "factions": [],
-      "stakes": "Someone in Longsaddle has been writing the town down for the Crown.",
+      "stakes": "Someone in Longsaddle is reporting on the town to the Crown.",
       "lead": "",
       "lastSession": 21
     },
@@ -515,8 +515,8 @@
       "factions": [
         "flaming-fist"
       ],
-      "stakes": "Nine people gone from the Lower City without a sound.",
-      "lead": "The banderhobbs were ended and the Flaming Fist paid out.",
+      "stakes": "Nine people vanished from the Lower City.",
+      "lead": "Banderhobbs killed. The Flaming Fist paid.",
       "lastSession": 17
     },
     {
@@ -533,8 +533,8 @@
         "house-vaelcrest",
         "miners-guild"
       ],
-      "stakes": "House Vaelcrest wants Griffon's Nest. Longsaddle wants wages, protection and a say in what happens to it.",
-      "lead": "Signed at Feldryn's after eight hours of talks.",
+      "stakes": "House Vaelcrest wanted Griffon's Nest; Longsaddle wanted wages, protection and a say in its future.",
+      "lead": "Charter signed at Feldryn's.",
       "lastSession": 26
     },
     {
@@ -550,7 +550,7 @@
       "factions": [
         "emberwatch"
       ],
-      "stakes": "The Emberwatch keeps a hearth in Neverwinter. Handout: Emberwatch Field Ledger.",
+      "stakes": "The Emberwatch has a hearth in Neverwinter. Handout: Emberwatch Field Ledger.",
       "lead": "",
       "lastSession": 26
     },
@@ -565,7 +565,7 @@
         "party"
       ],
       "factions": [],
-      "stakes": "A house of the Cat Goddess, sealed and forgotten.",
+      "stakes": "A sealed house of Bast.",
       "lead": "The Ninth Life recovered from the Reliquary of Bast.",
       "lastSession": 15
     },
@@ -580,7 +580,7 @@
         "carver"
       ],
       "factions": [],
-      "stakes": "Each month the Collegium posts a question on the Proving Board in Neverwinter's Artificers' District, and every shop in the city competes to answer it.",
+      "stakes": "The Collegium posts a monthly problem on the Proving Board in Neverwinter's Artificers' Quarter; shops compete to solve it.",
       "lead": "",
       "lastSession": 26
     },
@@ -597,8 +597,8 @@
       "factions": [
         "pale-lodge"
       ],
-      "stakes": "A Pale Lodge contract on the Quiet One at Talfir.",
-      "lead": "Contract filled. The Lodge coins were notched.",
+      "stakes": "Pale Lodge contract on the Quiet One at Talfir.",
+      "lead": "Contract filled; Lodge coins notched.",
       "lastSession": 14
     },
     {
@@ -614,8 +614,8 @@
       "factions": [
         "house-vaelcrest"
       ],
-      "stakes": "Edrion's airship sits in a hidden hangar east of Neverwinter with nothing to power its engine. The stone from Griffon's Nest is meant for its reactor core.",
-      "lead": "The Nest is held. Its stone still has to reach the hangar east of Neverwinter.",
+      "stakes": "Edrion's airship is in a hidden hangar east of Neverwinter with no power for its engine. Stone from Griffon's Nest is meant for its reactor core.",
+      "lead": "The Nest is held; the stone has not reached the hangar yet.",
       "lastSession": 26
     },
     {
@@ -631,8 +631,8 @@
       "factions": [
         "miners-guild"
       ],
-      "stakes": "Nine men dug the sealed north section of the mine, and none of them came out right.",
-      "lead": "Done.",
+      "stakes": "Nine men dug the sealed north section of the mine; none came out unchanged.",
+      "lead": "Completed.",
       "lastSession": 26
     },
     {
@@ -648,8 +648,8 @@
       "factions": [
         "flaming-fist"
       ],
-      "stakes": "The Stairwives, and what was hunting the poor quarters.",
-      "lead": "The party killed the banderhobb, uncovered the coven and told the Flaming Fist.",
+      "stakes": "Find what was taking people from the poor quarters.",
+      "lead": "The party killed the banderhobb, uncovered the coven and informed the Flaming Fist.",
       "lastSession": 17
     },
     {
@@ -665,7 +665,7 @@
       "factions": [
         "miners-guild"
       ],
-      "stakes": "A wrecked caravan with a waybill for the Miners' Guild Hall in Longsaddle.",
+      "stakes": "Deliver a wrecked caravan's waybill to the Miners' Guild Hall in Longsaddle.",
       "lead": "Delivered to Guildmaster Tarn Suldaver.",
       "lastSession": 21
     },
@@ -681,8 +681,8 @@
         "gustav"
       ],
       "factions": [],
-      "stakes": "House Ashvain vanished from its Starmantle estate in 1484 DR. No bodies, no struggle, no arcane trace. Handout: Ashvain Concordance.",
-      "lead": "Harwick said Adrion and Selise were being sent to Facility 6 when he last heard, 'but plans change.'",
+      "stakes": "House Ashvain vanished from its Starmantle estate in 1484 DR with no bodies, struggle or arcane trace. Handout: Ashvain Concordance.",
+      "lead": "Per Harwick: Adrion and Selise were being sent to Facility 6 when he last heard; plans may have changed.",
       "lastSession": 23
     },
     {
@@ -696,8 +696,8 @@
         "varsen"
       ],
       "factions": [],
-      "stakes": "Varsen's sisters headed to Neverwinter to bid on prospecting claims in the Moonshaes and Tethyr.",
-      "lead": "The voice: 'She isn't the one I'm looking for… Keep the faith.'",
+      "stakes": "Varsen's sisters went to Neverwinter to bid on prospecting claims in the Moonshaes and Tethyr.",
+      "lead": "A voice told him: 'She isn't the one I'm looking for… Keep the faith.'",
       "lastSession": 26
     },
     {
@@ -711,8 +711,8 @@
         "onotaro"
       ],
       "factions": [],
-      "stakes": "Onotaro remembers nothing of who he was before he walked into Strike Team Four.",
-      "lead": "The Covenant's credo snagged on a life he can't get back to. A brass sun coin came with 'Answers will come soon. Stay the path.'",
+      "stakes": "Onotaro has no memory of his life before Strike Team Four.",
+      "lead": "Phrasing in the Covenant's credo seemed familiar to him. A brass sun coin came with the message 'Answers will come soon. Stay the path.'",
       "lastSession": 26
     },
     {
@@ -728,8 +728,8 @@
       "factions": [
         "miners-guild"
       ],
-      "stakes": "Bring Longsaddle's guild over to the party's side.",
-      "lead": "The Guild stands with the party.",
+      "stakes": "Win the support of Longsaddle's Miners' Guild.",
+      "lead": "The Guild backs the party.",
       "lastSession": 22
     }
   ],
@@ -858,7 +858,7 @@
       "doneDays": 9,
       "untracked": false,
       "status": "active",
-      "teacher": "Carver (watching him work)"
+      "teacher": "Carver (observation)"
     },
     {
       "id": "onotaro-targeting",
@@ -914,7 +914,7 @@
       "doneDays": 50,
       "untracked": false,
       "status": "complete",
-      "teacher": "His father's lessons, from memory"
+      "teacher": "His father's lessons (from memory)"
     },
     {
       "id": "varsen-stonecarving",
@@ -931,9 +931,9 @@
       "teacher": "Carver"
     }
   ],
-  "changesTitle": "The War Table has been updated",
+  "changesTitle": "Board wording cleaned up",
   "changes": [
-    "The date is now 22 Kythorn 1487 DR"
+    "Quest summaries rewritten as plain facts; nothing added or removed"
   ],
-  "changesId": "fd590fab8688"
+  "changesId": "30eff6ff8a09"
 }

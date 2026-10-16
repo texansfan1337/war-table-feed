@@ -22,7 +22,7 @@ from pathlib import Path
 
 WAR_TABLE_URL = "https://texansfan1337.github.io/war-table-feed/"
 QUEST_FIELDS = ["title", "category", "status", "region", "giver", "owners", "factions", "stakes", "lead", "lastSession"]
-PURSUIT_FIELDS = ["pc", "kind", "title", "pickLabel", "filled", "total", "status", "teacher"]
+PURSUIT_FIELDS = ["pc", "kind", "title", "pickLabel", "filled", "total", "needDays", "doneDays", "untracked", "status", "teacher"]
 STATUSES = {"active", "rumored", "dormant", "resolved", "failed"}
 CATEGORIES = {"main", "side", "personal", "faction", "request"}
 

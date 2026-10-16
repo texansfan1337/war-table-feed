@@ -69,6 +69,7 @@ h2 small{font:13px "IBM Plex Mono",monospace;color:var(--faint)}
 .bar i{flex:1;height:8px;border-radius:2px;background:var(--line)}
 .bar i.on{background:var(--ember)}
 .bar i.cap{outline:1px solid var(--brass)}
+.note{color:var(--mute);font-size:14px;margin:0 0 14px}
 .empty{color:var(--mute);padding:24px;border:1px dashed var(--line);border-radius:6px;text-align:center}
 .err{color:var(--s-failed)}
 [hidden]{display:none!important}
@@ -179,16 +180,26 @@ function renderFactions(v) {
   })));
 }
 
+const fmtDays = d => { d = Math.round(d || 0); if (d < 5) return `${d} day${d === 1 ? "" : "s"}`; const w = Math.floor(d / 5), r = d % 5; return `${w} wk${r ? ` ${r} d` : ""}`; };
 function renderPursuits(v) {
-  const ps = (S.pursuits || []).filter(p => who === "all" || p.pc === who);
+  const ps = (S.pursuits || []).filter(p => who === "all" || p.pc === who)
+    .sort((a, b) => (a.status === "complete") - (b.status === "complete") || (a.status === "paused") - (b.status === "paused"));
+  v.append(el("p", {class: "note"}, "Downtime runs on Xanathar's Guide rules. Each box is a workweek of five days."));
   if (!ps.length) return v.append(el("div", {class: "empty"}, "No downtime pursuits yet."));
   v.append(el("div", {class: "grid"}, ps.map(p => {
-    const total = p.total || 1, filled = p.filled || 0;
-    return el("article", {class: "q", style: `--sc:${p.status === "complete" ? sc("resolved") : sc("active")}`},
-      el("div", {class: "row"}, el("span", {class: "tag"}, charName(p.pc)), el("span", {class: "tag"}, p.kind || "pursuit")),
+    const need = p.needDays ?? (p.total || 1) * 5;
+    const done = p.status === "complete" ? need : Math.min(need, p.doneDays ?? (p.filled || 0) * 5);
+    const weeks = Math.max(1, Math.ceil(need / 5)), shown = Math.min(weeks, 20);
+    const st = p.status === "complete" ? "resolved" : p.status === "paused" ? "dormant" : "active";
+    const label = p.untracked && p.status === "complete" ? "Finished before the tracker" : `${fmtDays(done)} of ${fmtDays(need)}`;
+    return el("article", {class: "q", style: `--sc:${sc(st)}`},
+      el("div", {class: "row"}, el("span", {class: "tag status"}, p.status === "complete" ? "Complete" : p.status === "paused" ? "Paused" : "In progress"), el("span", {class: "tag"}, charName(p.pc))),
       el("h3", {}, p.title || p.pickLabel || "Pursuit"),
-      el("div", {class: "bar"}, Array.from({length: total}, (_, i) => el("i", {class: (i < filled ? "on " : "") + (i === total - 1 ? "cap" : "")}))),
-      el("div", {class: "foot"}, el("span", {}, `${filled} / ${total}`), el("span", {}, p.teacher ? `Teacher: ${p.teacher}` : "")));
+      el("div", {class: "bar"}, Array.from({length: shown}, (_, i) => {
+        const cap = Math.min(5, need - i * 5) || 5, f = Math.max(0, Math.min(1, (done * shown / weeks - i * 5) / cap));
+        return el("i", {class: f >= 1 ? "on" : "", style: f > 0 && f < 1 ? `background:linear-gradient(90deg,var(--ember) ${Math.round(f * 100)}%,var(--line) 0)` : ""});
+      })),
+      el("div", {class: "foot"}, el("span", {}, label), el("span", {}, p.teacher ? `Teacher: ${p.teacher}` : "")));
   })));
 }
 

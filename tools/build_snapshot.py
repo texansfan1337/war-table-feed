@@ -20,7 +20,7 @@ import json
 from datetime import datetime, timezone
 from pathlib import Path
 
-WAR_TABLE_URL = "https://claude.ai/artifact/A91a17n8TPbBPqft9QMrCx"
+WAR_TABLE_URL = "https://texansfan1337.github.io/war-table-feed/"
 QUEST_FIELDS = ["title", "category", "status", "region", "giver", "owners", "factions", "stakes", "lead", "lastSession"]
 PURSUIT_FIELDS = ["pc", "kind", "title", "pickLabel", "filled", "total", "status", "teacher"]
 STATUSES = {"active", "rumored", "dormant", "resolved", "failed"}

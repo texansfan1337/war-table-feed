@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>The War Table</title>
+<meta name="description" content="Quest board for Project Faerûn: A Song of Sundering.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Grenze:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Condensed:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0f1114;--bg2:#161a1f;--card:#1b2026;--line:#2a313a;--ink:#e6e1d6;--mute:#9a978f;--faint:#6d6b66;
+  --ember:#d9773a;--brass:#c9a35a;
+  --s-active:#d9773a;--s-rumored:#b48ad6;--s-dormant:#7f8b99;--s-resolved:#6fae7b;--s-failed:#c25b5b;
+  color-scheme:dark;
+}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){
+  --bg:#f4f0e8;--bg2:#ebe5d9;--card:#fffdf8;--line:#d9d1c2;--ink:#221f1a;--mute:#5f5a52;--faint:#8b857b;
+  --ember:#b4561f;--brass:#8c6a24;
+  --s-active:#b4561f;--s-rumored:#7f4fae;--s-dormant:#5b6674;--s-resolved:#3d7f4b;--s-failed:#a53c3c;
+  color-scheme:light;
+}}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--ink);font:15px/1.5 "IBM Plex Sans Condensed",system-ui,sans-serif;min-height:100vh}
+.wrap{max-width:1080px;margin:0 auto;padding:28px 16px 64px}
+header{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px 24px;border-bottom:1px solid var(--line);padding-bottom:18px}
+.kicker{font:500 12px "IBM Plex Mono",monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--brass)}
+h1{font:700 clamp(34px,6vw,52px)/1 Grenze,serif;letter-spacing:.01em;margin-top:4px}
+h1 span{color:var(--ember)}
+.meta{font:13px "IBM Plex Mono",monospace;color:var(--mute);text-align:right}
+.meta b{color:var(--ink);font-weight:500}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin:22px 0}
+.stat{background:var(--bg2);border:1px solid var(--line);border-radius:6px;padding:12px 14px}
+.stat .n{font:600 28px/1 Grenze,serif}
+.stat .l{font:12px "IBM Plex Mono",monospace;color:var(--mute);text-transform:uppercase;letter-spacing:.08em;margin-top:4px}
+nav{display:flex;gap:4px;flex-wrap:wrap;border-bottom:1px solid var(--line);margin-bottom:18px}
+nav button{background:none;border:0;border-bottom:2px solid transparent;color:var(--mute);font:600 15px "IBM Plex Sans Condensed",sans-serif;padding:10px 12px;cursor:pointer}
+nav button[aria-selected="true"]{color:var(--ink);border-color:var(--ember)}
+.filters{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px}
+.chip{background:var(--bg2);border:1px solid var(--line);color:var(--mute);border-radius:999px;padding:5px 12px;font:500 13px "IBM Plex Sans Condensed",sans-serif;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ember);border-color:var(--ember);color:#fff}
+h2{font:600 24px Grenze,serif;margin:26px 0 10px;display:flex;align-items:baseline;gap:10px}
+h2 small{font:13px "IBM Plex Mono",monospace;color:var(--faint)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
+.q{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--sc,var(--line));border-radius:6px;padding:14px 16px;display:flex;flex-direction:column;gap:8px}
+.q h3{font:600 20px/1.15 Grenze,serif}
+.row{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.tag{font:500 11px "IBM Plex Mono",monospace;text-transform:uppercase;letter-spacing:.06em;padding:2px 7px;border-radius:3px;border:1px solid var(--line);color:var(--mute)}
+.tag.status{color:var(--sc);border-color:var(--sc)}
+.tag.ftag{color:var(--brass);border-color:color-mix(in srgb,var(--brass) 45%,transparent)}
+.q p{color:var(--ink);font-size:14.5px}
+.q .lead{color:var(--mute);border-top:1px dashed var(--line);padding-top:8px}
+.q .lead b{color:var(--ember);font:500 11px "IBM Plex Mono",monospace;letter-spacing:.08em;text-transform:uppercase;margin-right:6px}
+.foot{font:12px "IBM Plex Mono",monospace;color:var(--faint);display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.done{width:100%;border-collapse:collapse;font-size:14.5px}
+.done th{text-align:left;font:500 11px "IBM Plex Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);padding:8px 10px;border-bottom:1px solid var(--line)}
+.done td{padding:10px;border-bottom:1px solid var(--line);vertical-align:top}
+.done td:first-child{font:600 17px Grenze,serif;white-space:nowrap}
+.done .s{font-family:"IBM Plex Mono",monospace;color:var(--mute);white-space:nowrap}
+.tbl{overflow-x:auto}
+.fac-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px}
+.fac{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:16px}
+.fac h3{font:600 21px Grenze,serif}
+.fac p{color:var(--mute);font-size:14px;margin:4px 0 12px}
+.tally{display:flex;gap:16px;font:12px "IBM Plex Mono",monospace;color:var(--mute)}
+.tally b{display:block;font:600 26px Grenze,serif;color:var(--ink)}
+.bar{display:flex;gap:3px;margin:8px 0 4px}
+.bar i{flex:1;height:8px;border-radius:2px;background:var(--line)}
+.bar i.on{background:var(--ember)}
+.bar i.cap{outline:1px solid var(--brass)}
+.empty{color:var(--mute);padding:24px;border:1px dashed var(--line);border-radius:6px;text-align:center}
+.err{color:var(--s-failed)}
+[hidden]{display:none!important}
+@media (max-width:560px){.meta{text-align:left}.done td:first-child{white-space:normal}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <div class="kicker">Project Faerûn · A Song of Sundering</div>
+      <h1>The War <span>Table</span></h1>
+    </div>
+    <div class="meta" id="meta">Loading the board…</div>
+  </header>
+
+  <div class="stats" id="stats"></div>
+
+  <nav role="tablist">
+    <button role="tab" data-tab="open" aria-selected="true">Open quests</button>
+    <button role="tab" data-tab="done" aria-selected="false">Completed</button>
+    <button role="tab" data-tab="factions" aria-selected="false">Factions</button>
+    <button role="tab" data-tab="pursuits" aria-selected="false">Pursuits</button>
+  </nav>
+
+  <div class="filters" id="filters"></div>
+  <main id="view"></main>
+</div>
+
+<script>
+const CATS = [["main","Main Quests"],["faction","Faction Quests"],["side","Side Quests"],["personal","Personal Quests"],["request","Open Requests"]];
+const CAT_LABEL = Object.fromEntries(CATS.map(([k,v])=>[k,v.replace(/s$/,"")]));
+const STATUS = {active:"Active",rumored:"Rumored",dormant:"Dormant",resolved:"Completed",failed:"Failed"};
+const OPEN = ["active","rumored","dormant"];
+let S = null, tab = "open", who = "all";
+
+const el = (t, a = {}, ...kids) => {
+  const n = document.createElement(t);
+  for (const [k, v] of Object.entries(a)) {
+    if (k === "class") n.className = v; else if (k === "style") n.style.cssText = v;
+    else if (k.startsWith("on")) n.addEventListener(k.slice(2), v); else n.setAttribute(k, v);
+  }
+  for (const c of kids.flat()) if (c != null && c !== false) n.append(c);
+  return n;
+};
+const sc = s => `var(--s-${s})`;
+const facName = id => (S.factions.find(f => f.id === id) || {}).name || id;
+const charName = id => id === "party" ? "Party" : ((S.characters.find(c => c.id === id) || {}).name || id);
+const regionName = id => id ? (S.regions[id] || id) : "";
+const mine = q => who === "all" || (q.owners || []).includes(who);
+
+function quest(q) {
+  return el("article", {class: "q", style: `--sc:${sc(q.status)}`},
+    el("div", {class: "row"},
+      el("span", {class: "tag status"}, STATUS[q.status] || q.status),
+      el("span", {class: "tag"}, CAT_LABEL[q.category] || q.category),
+      ...(q.factions || []).map(f => el("span", {class: "tag ftag"}, facName(f)))),
+    el("h3", {}, q.title),
+    q.stakes ? el("p", {}, q.stakes) : null,
+    q.lead ? el("p", {class: "lead"}, el("b", {}, "Lead"), q.lead) : null,
+    el("div", {class: "foot"},
+      el("span", {}, (q.owners || []).map(charName).join(" · ") + (q.giver ? ` — from ${q.giver}` : "")),
+      el("span", {}, [regionName(q.region), q.lastSession ? `S${q.lastSession}` : ""].filter(Boolean).join(" · "))));
+}
+
+function renderFilters() {
+  const f = document.getElementById("filters");
+  f.replaceChildren();
+  f.hidden = tab === "factions";
+  const opts = [["all", "Everyone"], ["party", "Party"], ...S.characters.map(c => [c.id, c.name.split(" ")[0]])];
+  for (const [id, label] of opts)
+    f.append(el("button", {class: "chip", "aria-pressed": String(who === id), onclick: () => { who = id; render(); }}, label));
+}
+
+function renderOpen(v) {
+  const qs = S.quests.filter(q => OPEN.includes(q.status) && mine(q));
+  if (!qs.length) return v.append(el("div", {class: "empty"}, "No open quests here."));
+  const order = {active: 0, rumored: 1, dormant: 2};
+  for (const [cat, label] of CATS) {
+    const list = qs.filter(q => q.category === cat).sort((a, b) => order[a.status] - order[b.status] || (b.lastSession || 0) - (a.lastSession || 0));
+    if (!list.length) continue;
+    v.append(el("h2", {}, label, el("small", {}, String(list.length))), el("div", {class: "grid"}, list.map(quest)));
+  }
+}
+
+function renderDone(v) {
+  const qs = S.quests.filter(q => (q.status === "resolved" || q.status === "failed") && mine(q))
+    .sort((a, b) => (a.lastSession || 0) - (b.lastSession || 0));
+  if (!qs.length) return v.append(el("div", {class: "empty"}, "Nothing finished yet."));
+  v.append(el("div", {class: "tbl"}, el("table", {class: "done"},
+    el("thead", {}, el("tr", {}, ["Quest", "Outcome", "For", "Session"].map(h => el("th", {}, h)))),
+    el("tbody", {}, qs.map(q => el("tr", {},
+      el("td", {style: q.status === "failed" ? `color:${sc("failed")}` : ""}, q.title),
+      el("td", {}, q.lead || q.stakes || ""),
+      el("td", {}, (q.factions || []).length ? q.factions.map(facName).join(", ") : (q.owners || []).map(charName).join(", ")),
+      el("td", {class: "s"}, q.lastSession ? `S${q.lastSession}` : "—")))))));
+}
+
+function renderFactions(v) {
+  v.append(el("div", {class: "fac-grid"}, S.factions.map(f => {
+    const qs = S.quests.filter(q => (q.factions || []).includes(f.id));
+    const n = s => qs.filter(q => s.includes(q.status)).length;
+    return el("div", {class: "fac"}, el("h3", {}, f.name), el("p", {}, f.blurb || ""),
+      el("div", {class: "tally"},
+        el("span", {}, el("b", {}, String(n(["resolved"]))), "completed"),
+        el("span", {}, el("b", {}, String(n(OPEN))), "in progress"),
+        el("span", {}, el("b", {}, String(n(["failed"]))), "failed")));
+  })));
+}
+
+function renderPursuits(v) {
+  const ps = (S.pursuits || []).filter(p => who === "all" || p.pc === who);
+  if (!ps.length) return v.append(el("div", {class: "empty"}, "No downtime pursuits yet."));
+  v.append(el("div", {class: "grid"}, ps.map(p => {
+    const total = p.total || 1, filled = p.filled || 0;
+    return el("article", {class: "q", style: `--sc:${p.status === "complete" ? sc("resolved") : sc("active")}`},
+      el("div", {class: "row"}, el("span", {class: "tag"}, charName(p.pc)), el("span", {class: "tag"}, p.kind || "pursuit")),
+      el("h3", {}, p.title || p.pickLabel || "Pursuit"),
+      el("div", {class: "bar"}, Array.from({length: total}, (_, i) => el("i", {class: (i < filled ? "on " : "") + (i === total - 1 ? "cap" : "")}))),
+      el("div", {class: "foot"}, el("span", {}, `${filled} / ${total}`), el("span", {}, p.teacher ? `Teacher: ${p.teacher}` : "")));
+  })));
+}
+
+function render() {
+  document.querySelectorAll("nav button").forEach(b => b.setAttribute("aria-selected", String(b.dataset.tab === tab)));
+  renderFilters();
+  const v = document.getElementById("view");
+  v.replaceChildren();
+  ({open: renderOpen, done: renderDone, factions: renderFactions, pursuits: renderPursuits})[tab](v);
+}
+
+function renderHeader() {
+  const meta = document.getElementById("meta");
+  meta.replaceChildren(el("div", {}, el("b", {}, S.calendar.label)),
+    el("div", {}, S.calendar.nextSession ? `Next: Session ${S.calendar.nextSession}` : ""));
+  const count = s => S.quests.filter(q => s.includes(q.status)).length;
+  document.getElementById("stats").replaceChildren(
+    ...[[count(["active"]), "Active"], [count(["rumored", "dormant"]), "Rumored / quiet"], [count(["resolved"]), "Completed"], [S.factions.length, "Factions"]]
+      .map(([n, l]) => el("div", {class: "stat"}, el("div", {class: "n"}, String(n)), el("div", {class: "l"}, l))));
+}
+
+document.querySelectorAll("nav button").forEach(b => b.addEventListener("click", () => { tab = b.dataset.tab; if (S) render(); }));
+
+async function load() {
+  try {
+    const r = await fetch("snapshot.json?t=" + Date.now(), {cache: "no-store"});
+    if (!r.ok) throw new Error(r.status);
+    const next = await r.json();
+    const changed = !S || next.generated !== S.generated;
+    S = next;
+    if (changed) { renderHeader(); render(); }
+  } catch (e) {
+    if (!S) document.getElementById("meta").replaceChildren(el("span", {class: "err"}, "The board couldn't be loaded. Try again shortly."));
+  }
+}
+load();
+setInterval(load, 5 * 60 * 1000);
+</script>
+</body>
+</html>

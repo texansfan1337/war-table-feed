@@ -15,4 +15,4 @@ The Discord bot polls `snapshot.json` in this repo every 5 minutes. This is how 
 
 ## Maps
 
-`maps/` holds copies of the campaign's map pages, shown on the player board's Maps tab (`MAPS` list in `index.html`). When a map artifact changes, copy the new page over its file here (and into the War Table) so the copies don't go stale. The hourly sync never touches `maps/`.
+`maps/` holds copies of the campaign's map pages, shown on the player board's Maps tab (`MAPS` list in `index.html`). When a map artifact changes, copy the new page over its file here (and into the War Table) so the copies don't go stale, then run `python3 tools/stamp_maps.py` and commit `index.html` too. The stamp adds a content hash to the map link; without it, browsers keep showing the old map. The hourly sync never touches `maps/`.

@@ -1,14 +1,14 @@
 {
   "schema": 1,
-  "generated": "2026-10-16T23:47:22+00:00",
+  "generated": "2026-10-20T04:21:53+00:00",
   "warTableUrl": "https://texansfan1337.github.io/war-table-feed/",
   "calendar": {
-    "label": "22 Kythorn 1487 DR",
+    "label": "25 Kythorn 1487 DR",
     "year": 1487,
     "month": "Kythorn",
-    "day": 22,
+    "day": 25,
     "fest": null,
-    "nextSession": 27
+    "nextSession": 28
   },
   "regions": {
     "longsaddle": "Longsaddle & Griffon's Nest",
@@ -89,7 +89,7 @@
       "id": "castle-never",
       "title": "Audience at Castle Never",
       "category": "faction",
-      "status": "active",
+      "status": "resolved",
       "region": "neverwinter",
       "giver": "Lord Edrion Vaelcrest, by Advocate Ineth Ravelle",
       "owners": [
@@ -99,8 +99,8 @@
         "house-vaelcrest"
       ],
       "stakes": "Lord Edrion wants to meet the party about the raw face at Griffon's Nest. Ravelle's written promises are pending: property, a liquor licence, unlimited Magistone with sharing, Carver's rights, intel for Varsen. Handout: The Summons to Neverwinter.",
-      "lead": "Ravelle's writ grants passage on the next timber raft from Ashfoot Camp to Neverwinter's river gate.",
-      "lastSession": 26
+      "lead": "Met Lord Edrion at Castle Never, 25 Kythorn. The party will work with Neverwinter as allies, not under its command. The twins' property has been delivered; the other promises have not yet been discussed.",
+      "lastSession": 27
     },
     {
       "id": "cass-research",
@@ -185,6 +185,21 @@
       "lastSession": 13
     },
     {
+      "id": "gull-rock",
+      "title": "Gull Rock",
+      "category": "request",
+      "status": "rumored",
+      "region": "neverwinter",
+      "giver": "Enclave bounty board",
+      "owners": [
+        "party"
+      ],
+      "factions": [],
+      "stakes": "Posted request to end a haunting on Gull Rock, a small island offshore.",
+      "lead": "",
+      "lastSession": 27
+    },
+    {
       "id": "hans-amplifier",
       "title": "Hans's Amplifier",
       "category": "personal",
@@ -227,7 +242,7 @@
       ],
       "factions": [],
       "stakes": "Lisbeth Crane is staying two days at her sister's.",
-      "lead": "She has a job lined up at Ze Flonti Flaggen.",
+      "lead": "She has a job lined up at The Flaunty Flagon.",
       "lastSession": 26
     },
     {
@@ -312,6 +327,53 @@
       "stakes": "Clear the Moon Tower and take the throne room.",
       "lead": "Tower cleared, prisoner freed, throne room taken. The Cormyrian Civil War ended.",
       "lastSession": 6
+    },
+    {
+      "id": "owlbear-feathers",
+      "title": "Owlbear Feathers",
+      "category": "request",
+      "status": "rumored",
+      "region": "neverwinter",
+      "giver": "Enclave bounty board",
+      "owners": [
+        "party"
+      ],
+      "factions": [],
+      "stakes": "Posted request for feathers from a specific group of owlbears in the Neverwinter Wood.",
+      "lead": "",
+      "lastSession": 27
+    },
+    {
+      "id": "pit-or-purse",
+      "title": "Pit or Purse",
+      "category": "personal",
+      "status": "active",
+      "region": "neverwinter",
+      "giver": "Lady Marrowmont's collector",
+      "owners": [
+        "varsen"
+      ],
+      "factions": [],
+      "stakes": "A collector claims the Gleamhammers owe Lady Marrowmont 700 crowns. Win three fights in an arena under Neverwinter and the debt is cleared; a good show earns what they know about Varsen's sisters.",
+      "lead": "Varsen agreed. No time or place given yet.",
+      "lastSession": 27
+    },
+    {
+      "id": "salt-fire",
+      "title": "Salt Fire",
+      "category": "faction",
+      "status": "active",
+      "region": "neverwinter",
+      "giver": "A Pale Lodge Herald at the Horologe",
+      "owners": [
+        "party"
+      ],
+      "factions": [
+        "pale-lodge"
+      ],
+      "stakes": "Per the Lodge, false-god blight has settled on Neverwinter. Salt Fire reveals and tracks it. Use it in unusual places and report back.",
+      "lead": "A Huntmaster arrives around 27 Kythorn to discuss the mote and the Brightfire relic. Keep both secret until then.",
+      "lastSession": 27
     },
     {
       "id": "seraph",
@@ -404,8 +466,8 @@
       ],
       "factions": [],
       "stakes": "Five cultists in the cave below Secumber stabbed themselves to feed a statue, releasing the Unlit. The party destroyed it and kept the green mote it left. Handout: The Quiet Codex — The First Verse (Of Noise).",
-      "lead": "The lead cultist's pamphlet ends: 'The world will not end. It will exhale.' A sixth man had the Covenant's mark behind his left ear and the first chapter of a credo.",
-      "lastSession": 21
+      "lead": "The lead cultist's pamphlet ends: 'The world will not end. It will exhale.' A sixth man had the Covenant's mark behind his left ear and the first chapter of a credo. The green mote was shown to a Pale Lodge Herald, 25 Kythorn (see Salt Fire).",
+      "lastSession": 27
     },
     {
       "id": "harwick",
@@ -421,6 +483,22 @@
       "stakes": "Dr. Pell Harwick, a Facility 9 surgeon, was free in Baldur's Gate.",
       "lead": "Found, interrogated and killed.",
       "lastSession": 23
+    },
+    {
+      "id": "flaunty-flagon",
+      "title": "The Flaunty Flagon",
+      "category": "personal",
+      "status": "active",
+      "region": "neverwinter",
+      "giver": "Osric Tolliver, Office of Deeds and Conveyance",
+      "owners": [
+        "hans",
+        "gustav"
+      ],
+      "factions": [],
+      "stakes": "The twins own the former Marrowgate Salon on Blacklake and plan to open a tavern and inn. Per Osric Tolliver: seven owners in nine years, 'a room that never feels empty', furnishings stay put.",
+      "lead": "Deed signed 25 Kythorn. Not yet visited.",
+      "lastSession": 27
     },
     {
       "id": "crag-frame",
@@ -520,6 +598,23 @@
       "lastSession": 17
     },
     {
+      "id": "lamprey",
+      "title": "The Lamprey",
+      "category": "faction",
+      "status": "active",
+      "region": "neverwinter",
+      "giver": "Lord Edrion Vaelcrest",
+      "owners": [
+        "party"
+      ],
+      "factions": [
+        "house-vaelcrest"
+      ],
+      "stakes": "A six-crew submersible. Board the Crown blockade's flagship during the bombing and take its orders, valuables and items before it sinks.",
+      "lead": "Answer Edrion by the morning of 28 Kythorn.",
+      "lastSession": 27
+    },
+    {
       "id": "longsaddle-charter",
       "title": "The Longsaddle Charter",
       "category": "faction",
@@ -615,8 +710,8 @@
         "house-vaelcrest"
       ],
       "stakes": "Edrion's airship is in a hidden hangar east of Neverwinter with no power for its engine. Stone from Griffon's Nest is meant for its reactor core.",
-      "lead": "The Nest is held; the stone has not reached the hangar yet.",
-      "lastSession": 26
+      "lead": "Per Edrion: the blockade is to be bombed on the evening of 28 Kythorn. Stone is already moving to the bunker for refining. Edrion has offered to show Carver and Jasper the Redeemer.",
+      "lastSession": 27
     },
     {
       "id": "ninth-bulkhead",
@@ -697,14 +792,14 @@
       ],
       "factions": [],
       "stakes": "Varsen's sisters went to Neverwinter to bid on prospecting claims in the Moonshaes and Tethyr.",
-      "lead": "A voice told him: 'She isn't the one I'm looking for… Keep the faith.'",
-      "lastSession": 26
+      "lead": "No record of Brenna or Bruna at the docks claims bazaar; a clerk reacted to the name Gleamhammer. Lady Marrowmont's collector says they know something about the sisters (see Pit or Purse).",
+      "lastSession": 27
     },
     {
       "id": "onotaro-lost",
       "title": "What Onotaro Lost",
       "category": "personal",
-      "status": "dormant",
+      "status": "active",
       "region": "",
       "giver": "",
       "owners": [
@@ -712,8 +807,8 @@
       ],
       "factions": [],
       "stakes": "Onotaro has no memory of his life before Strike Team Four.",
-      "lead": "Phrasing in the Covenant's credo seemed familiar to him. A brass sun coin came with the message 'Answers will come soon. Stay the path.'",
-      "lastSession": 26
+      "lead": "25 Kythorn: a Hadozee who knew Onotaro met him in Neverwinter after appearing in his dreams. Said they both come from the Aetherfold; the Empire is \"merely a symptom of a greater disease\"; stay with the Pale Lodge; he will meet the party soon.",
+      "lastSession": 27
     },
     {
       "id": "miners-guild-won",
@@ -763,6 +858,34 @@
       "teacher": ""
     },
     {
+      "id": "carver-elemental-magistone",
+      "pc": "carver",
+      "kind": "magistone",
+      "title": "Elemental Magistone understanding",
+      "pickLabel": "",
+      "filled": 1,
+      "total": 1,
+      "needDays": 5,
+      "doneDays": 5,
+      "untracked": false,
+      "status": "complete",
+      "teacher": ""
+    },
+    {
+      "id": "carver-finger-guns",
+      "pc": "carver",
+      "kind": "other",
+      "title": "Finger guns",
+      "pickLabel": "",
+      "filled": 1,
+      "total": 1,
+      "needDays": 5,
+      "doneDays": 5,
+      "untracked": true,
+      "status": "complete",
+      "teacher": ""
+    },
+    {
       "id": "carver-ring-reading",
       "pc": "carver",
       "kind": "magistone",
@@ -787,6 +910,20 @@
       "needDays": 5,
       "doneDays": 5,
       "untracked": true,
+      "status": "complete",
+      "teacher": ""
+    },
+    {
+      "id": "gustav-cure-scrolls-2",
+      "pc": "gustav",
+      "kind": "scroll",
+      "title": "Scrolls of Cure Wounds (5)",
+      "pickLabel": "1st level",
+      "filled": 1,
+      "total": 1,
+      "needDays": 5,
+      "doneDays": 5,
+      "untracked": false,
       "status": "complete",
       "teacher": ""
     },
@@ -852,10 +989,10 @@
       "kind": "magistone",
       "title": "Integration into gear: Magistone craft",
       "pickLabel": "Raw stone, any grade",
-      "filled": 1,
+      "filled": 2,
       "total": 6,
       "needDays": 30,
-      "doneDays": 9,
+      "doneDays": 10,
       "untracked": false,
       "status": "active",
       "teacher": "Carver (observation)"
@@ -931,9 +1068,17 @@
       "teacher": "Carver"
     }
   ],
-  "changesTitle": "Board wording cleaned up",
+  "changesTitle": "After Session 27",
   "changes": [
-    "Quest summaries rewritten as plain facts; nothing added or removed"
+    "Calendar: 25 Kythorn 1487 DR",
+    "Completed: Audience at Castle Never",
+    "New: The Lamprey (House Vaelcrest) - answer Edrion by the morning of 28 Kythorn",
+    "New: Salt Fire (Pale Lodge) - a Huntmaster arrives around 27 Kythorn",
+    "New: Pit or Purse (Varsen)",
+    "New: The Flaunty Flagon (Hans & Gustav)",
+    "Rumored: Gull Rock and Owlbear Feathers on the Enclave bounty board",
+    "Updated: What Onotaro Lost is active again; Varsen's Sisters; The Redeemer's Core",
+    "Downtime: Carver's elemental Magistone study and finger guns complete; Gustav wrote 5 Cure Wounds scrolls; Onotaro can now make Magistone checks"
   ],
-  "changesId": "30eff6ff8a09"
+  "changesId": "e8e9d91e47dc"
 }

@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated": "2026-10-27T14:11:54+00:00",
+  "generated": "2026-10-27T14:20:02+00:00",
   "warTableUrl": "https://texansfan1337.github.io/war-table-feed/",
   "calendar": {
     "label": "26 Kythorn 1487 DR",
@@ -1084,9 +1084,16 @@
       "teacher": "Carver"
     }
   ],
-  "changesTitle": "The War Table has been updated",
+  "changesTitle": "After Session 28",
   "changes": [
-    "Updated: The Proving"
+    "Pit or Purse: contract signed; two of three Gullet fights won; the final round is a froghemoth",
+    "Gull Rock is now active: Lord Fennick Daunt's island for 1 gp once certified safe",
+    "The Proving is now active (Carver and Jasper): Flamerule's Problem is putting out Crown fire ships",
+    "The Redeemer's Core: the party has seen the finished airship; bombing run on the evening of 28 Kythorn",
+    "Varsen's Sisters: new leads from Edrion and the Bazaar Tabaxi",
+    "Owlbear Feathers: the giver is Archmaester Sulfuras Honnold, Circle of the Arcane Eye",
+    "New personal quest: A Lecture at the Collegium (Carver)",
+    "The date is now 26 Kythorn 1487 DR"
   ],
-  "changesId": "97a37442295a"
+  "changesId": "dcc67c52ae98"
 }

@@ -1,14 +1,14 @@
 {
   "schema": 1,
-  "generated": "2026-10-20T04:21:53+00:00",
+  "generated": "2026-10-27T13:50:38+00:00",
   "warTableUrl": "https://texansfan1337.github.io/war-table-feed/",
   "calendar": {
-    "label": "25 Kythorn 1487 DR",
+    "label": "26 Kythorn 1487 DR",
     "year": 1487,
     "month": "Kythorn",
-    "day": 25,
+    "day": 26,
     "fest": null,
-    "nextSession": 28
+    "nextSession": 29
   },
   "regions": {
     "longsaddle": "Longsaddle & Griffon's Nest",
@@ -86,6 +86,21 @@
   ],
   "quests": [
     {
+      "id": "collegium-lecture",
+      "title": "A Lecture at the Collegium",
+      "category": "personal",
+      "status": "active",
+      "region": "neverwinter",
+      "giver": "Headmaster Gambling, Vaelcrest Collegium",
+      "owners": [
+        "carver"
+      ],
+      "factions": [],
+      "stakes": "The Headmaster asked Carver to give his students a guest lecture.",
+      "lead": "Agreed, for after the blockade breaks. The Headmaster will find Carver at the Rail.",
+      "lastSession": 28
+    },
+    {
       "id": "castle-never",
       "title": "Audience at Castle Never",
       "category": "faction",
@@ -100,7 +115,7 @@
       ],
       "stakes": "Lord Edrion wants to meet the party about the raw face at Griffon's Nest. Ravelle's written promises are pending: property, a liquor licence, unlimited Magistone with sharing, Carver's rights, intel for Varsen. Handout: The Summons to Neverwinter.",
       "lead": "Met Lord Edrion at Castle Never, 25 Kythorn. The party will work with Neverwinter as allies, not under its command. The twins' property has been delivered; the other promises have not yet been discussed.",
-      "lastSession": 27
+      "lastSession": 28
     },
     {
       "id": "cass-research",
@@ -188,16 +203,16 @@
       "id": "gull-rock",
       "title": "Gull Rock",
       "category": "request",
-      "status": "rumored",
+      "status": "active",
       "region": "neverwinter",
-      "giver": "Enclave bounty board",
+      "giver": "Lord Fennick Daunt",
       "owners": [
         "party"
       ],
       "factions": [],
-      "stakes": "Posted request to end a haunting on Gull Rock, a small island offshore.",
-      "lead": "",
-      "lastSession": 27
+      "stakes": "Daunt inherited Gull Rock from his great-aunt, Lady Odile Daunt. The harbor court condemned it last year, and the city still taxes it quarterly. Per Daunt: creatures attack anyone trying to remove them, there are mists, and dockworkers hear screams. Locals call it the Grey Maiden of Gull Rock. Reward: the island for 1 gp once it is certified safe.",
+      "lead": "Jasper accepted, 26 Kythorn. The party holds a ring of 5 keys to the island's buildings. Daunt is staying at the Beached Leviathan.",
+      "lastSession": 28
     },
     {
       "id": "hans-amplifier",
@@ -334,14 +349,14 @@
       "category": "request",
       "status": "rumored",
       "region": "neverwinter",
-      "giver": "Enclave bounty board",
+      "giver": "Archmaester Sulfuras Honnold, Circle of the Arcane Eye",
       "owners": [
         "party"
       ],
       "factions": [],
       "stakes": "Posted request for feathers from a specific group of owlbears in the Neverwinter Wood.",
-      "lead": "",
-      "lastSession": 27
+      "lead": "Ask for Honnold at the Circle of the Arcane Eye.",
+      "lastSession": 28
     },
     {
       "id": "pit-or-purse",
@@ -349,14 +364,14 @@
       "category": "personal",
       "status": "active",
       "region": "neverwinter",
-      "giver": "Lady Marrowmont's collector",
+      "giver": "Bracken Tull, for Lady Vessa Marrowmont",
       "owners": [
         "varsen"
       ],
       "factions": [],
-      "stakes": "A collector claims the Gleamhammers owe Lady Marrowmont 700 crowns. Win three fights in an arena under Neverwinter and the debt is cleared; a good show earns what they know about Varsen's sisters.",
-      "lead": "Varsen agreed. No time or place given yet.",
-      "lastSession": 27
+      "stakes": "Contract signed 26 Kythorn: win three fights at the Gullet and the 700-crown Gleamhammer debt is cleared, plus a 25% cut of earnings above a set mark. Yield (weapon down, both hands up) or die and the debt becomes three open-ended tasks for Marrowmont. Per Edrion: the paper is legitimate. Per Tull: a good show earns what they know about Varsen's sisters.",
+      "lead": "26 Kythorn: won fight 1 (Gannet Rook's crew) and fight 2 (Yara Two-Fist's crew). Final round after an hour's rest: a froghemoth. Gustav holds paid life insurance.",
+      "lastSession": 28
     },
     {
       "id": "salt-fire",
@@ -497,8 +512,8 @@
       ],
       "factions": [],
       "stakes": "The twins own the former Marrowgate Salon on Blacklake and plan to open a tavern and inn. Per Osric Tolliver: seven owners in nine years, 'a room that never feels empty', furnishings stay put.",
-      "lead": "Deed signed 25 Kythorn. Not yet visited.",
-      "lastSession": 27
+      "lead": "Deed signed 25 Kythorn. The twins went there that night.",
+      "lastSession": 28
     },
     {
       "id": "crag-frame",
@@ -612,7 +627,7 @@
       ],
       "stakes": "A six-crew submersible. Board the Crown blockade's flagship during the bombing and take its orders, valuables and items before it sinks.",
       "lead": "Answer Edrion by the morning of 28 Kythorn.",
-      "lastSession": 27
+      "lastSession": 28
     },
     {
       "id": "longsaddle-charter",
@@ -668,16 +683,17 @@
       "id": "proving",
       "title": "The Proving",
       "category": "request",
-      "status": "rumored",
+      "status": "active",
       "region": "neverwinter",
       "giver": "Cass Stormrider",
       "owners": [
-        "carver"
+        "carver",
+        "jasper"
       ],
       "factions": [],
-      "stakes": "The Collegium posts a monthly problem on the Proving Board in Neverwinter's Artificers' Quarter; shops compete to solve it.",
-      "lead": "",
-      "lastSession": 26
+      "stakes": "Monthly Problem from the Vaelcrest Collegium; shops compete. Flamerule's Problem (Carver saw it early, asked to destroy the copy): a device to quickly put out Crown fire ships, usable by someone who is not resonant.",
+      "lead": "Opens 1 Flamerule. Carver plans to enter with elemental Magistone. Carver and Edrion agreed to share findings once the Proving is over.",
+      "lastSession": 28
     },
     {
       "id": "talfir",
@@ -709,9 +725,9 @@
       "factions": [
         "house-vaelcrest"
       ],
-      "stakes": "Edrion's airship is in a hidden hangar east of Neverwinter with no power for its engine. Stone from Griffon's Nest is meant for its reactor core.",
-      "lead": "Per Edrion: the blockade is to be bombed on the evening of 28 Kythorn. Stone is already moving to the bunker for refining. Edrion has offered to show Carver and Jasper the Redeemer.",
-      "lastSession": 27
+      "stakes": "Edrion's airship, built in a hidden hangar east of Neverwinter, is meant to break the Crown blockade.",
+      "lead": "Shown to Carver, Jasper, Varsen and Onotaro on the night of 25 Kythorn. Complete: 8 Riftborn cores (4 sockets empty), lift from a stored reverse-gravity spell, fire-resonance engine, grapeshot cannons, about 24 Magistone charges set to burst at the waterline. Bombing run on the evening of 28 Kythorn.",
+      "lastSession": 28
     },
     {
       "id": "ninth-bulkhead",
@@ -792,8 +808,8 @@
       ],
       "factions": [],
       "stakes": "Varsen's sisters went to Neverwinter to bid on prospecting claims in the Moonshaes and Tethyr.",
-      "lead": "No record of Brenna or Bruna at the docks claims bazaar; a clerk reacted to the name Gleamhammer. Lady Marrowmont's collector says they know something about the sisters (see Pit or Purse).",
-      "lastSession": 27
+      "lead": "Per Edrion: the sisters were in Neverwinter; unknown whether they still are; his people are looking. Per elderly Tabaxi merchants in the Bazaar: they met the sisters, and the sisters' mother had gone missing while searching for her husband. Marrowmont's people claim to know more (see Pit or Purse).",
+      "lastSession": 28
     },
     {
       "id": "onotaro-lost",
@@ -807,8 +823,8 @@
       ],
       "factions": [],
       "stakes": "Onotaro has no memory of his life before Strike Team Four.",
-      "lead": "25 Kythorn: a Hadozee who knew Onotaro met him in Neverwinter after appearing in his dreams. Said they both come from the Aetherfold; the Empire is \"merely a symptom of a greater disease\"; stay with the Pale Lodge; he will meet the party soon.",
-      "lastSession": 27
+      "lead": "25 Kythorn: a Hadozee who knew Onotaro met him in Neverwinter after appearing in his dreams. Said they both come from the Aetherfold; the Empire is \"merely a symptom of a greater disease\"; stay with the Pale Lodge; he will meet the party soon. Edrion has never seen a hadozee; his guards will watch for one. No sign of him in the city on 26 Kythorn.",
+      "lastSession": 28
     },
     {
       "id": "miners-guild-won",
@@ -1068,17 +1084,18 @@
       "teacher": "Carver"
     }
   ],
-  "changesTitle": "After Session 27",
+  "changesTitle": "The War Table has been updated",
   "changes": [
-    "Calendar: 25 Kythorn 1487 DR",
-    "Completed: Audience at Castle Never",
-    "New: The Lamprey (House Vaelcrest) - answer Edrion by the morning of 28 Kythorn",
-    "New: Salt Fire (Pale Lodge) - a Huntmaster arrives around 27 Kythorn",
-    "New: Pit or Purse (Varsen)",
-    "New: The Flaunty Flagon (Hans & Gustav)",
-    "Rumored: Gull Rock and Owlbear Feathers on the Enclave bounty board",
-    "Updated: What Onotaro Lost is active again; Varsen's Sisters; The Redeemer's Core",
-    "Downtime: Carver's elemental Magistone study and finger guns complete; Gustav wrote 5 Cure Wounds scrolls; Onotaro can now make Magistone checks"
+    "New quest: A Lecture at the Collegium",
+    "Gull Rock: now active",
+    "Updated: Owlbear Feathers",
+    "Updated: Pit or Purse",
+    "Updated: The Flaunty Flagon",
+    "The Proving: now active",
+    "Updated: The Redeemer's Core",
+    "Updated: Varsen's Sisters",
+    "Updated: What Onotaro Lost",
+    "The date is now 26 Kythorn 1487 DR"
   ],
-  "changesId": "e8e9d91e47dc"
+  "changesId": "91834a773e45"
 }

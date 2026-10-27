@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated": "2026-10-27T13:50:38+00:00",
+  "generated": "2026-10-27T14:11:54+00:00",
   "warTableUrl": "https://texansfan1337.github.io/war-table-feed/",
   "calendar": {
     "label": "26 Kythorn 1487 DR",
@@ -692,7 +692,7 @@
       ],
       "factions": [],
       "stakes": "Monthly Problem from the Vaelcrest Collegium; shops compete. Flamerule's Problem (Carver saw it early, asked to destroy the copy): a device to quickly put out Crown fire ships, usable by someone who is not resonant.",
-      "lead": "Opens 1 Flamerule. Carver plans to enter with elemental Magistone. Carver and Edrion agreed to share findings once the Proving is over.",
+      "lead": "Opens 1 Flamerule. Carver plans to enter with elemental Magistone; Headmaster Gambling showed him the Problem early. Carver and Edrion agreed to share findings once the Proving is over.",
       "lastSession": 28
     },
     {
@@ -1086,16 +1086,7 @@
   ],
   "changesTitle": "The War Table has been updated",
   "changes": [
-    "New quest: A Lecture at the Collegium",
-    "Gull Rock: now active",
-    "Updated: Owlbear Feathers",
-    "Updated: Pit or Purse",
-    "Updated: The Flaunty Flagon",
-    "The Proving: now active",
-    "Updated: The Redeemer's Core",
-    "Updated: Varsen's Sisters",
-    "Updated: What Onotaro Lost",
-    "The date is now 26 Kythorn 1487 DR"
+    "Updated: The Proving"
   ],
-  "changesId": "91834a773e45"
+  "changesId": "97a37442295a"
 }

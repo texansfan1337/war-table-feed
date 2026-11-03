@@ -1,14 +1,14 @@
 {
   "schema": 1,
-  "generated": "2026-10-27T14:20:02+00:00",
+  "generated": "2026-11-03T05:45:02+00:00",
   "warTableUrl": "https://texansfan1337.github.io/war-table-feed/",
   "calendar": {
-    "label": "26 Kythorn 1487 DR",
+    "label": "27 Kythorn 1487 DR",
     "year": 1487,
     "month": "Kythorn",
-    "day": 26,
+    "day": 27,
     "fest": null,
-    "nextSession": 29
+    "nextSession": 30
   },
   "regions": {
     "longsaddle": "Longsaddle & Griffon's Nest",
@@ -98,7 +98,7 @@
       "factions": [],
       "stakes": "The Headmaster asked Carver to give his students a guest lecture.",
       "lead": "Agreed, for after the blockade breaks. The Headmaster will find Carver at the Rail.",
-      "lastSession": 28
+      "lastSession": 29
     },
     {
       "id": "castle-never",
@@ -211,8 +211,8 @@
       ],
       "factions": [],
       "stakes": "Daunt inherited Gull Rock from his great-aunt, Lady Odile Daunt. The harbor court condemned it last year, and the city still taxes it quarterly. Per Daunt: creatures attack anyone trying to remove them, there are mists, and dockworkers hear screams. Locals call it the Grey Maiden of Gull Rock. Reward: the island for 1 gp once it is certified safe.",
-      "lead": "Jasper accepted, 26 Kythorn. The party holds a ring of 5 keys to the island's buildings. Daunt is staying at the Beached Leviathan.",
-      "lastSession": 28
+      "lead": "Jasper accepted, 26 Kythorn. The party holds a ring of 5 keys to the island's buildings. Daunt is staying at the Beached Leviathan. 27 Kythorn: Jasper put it to the party; agreed for after the blockade.",
+      "lastSession": 29
     },
     {
       "id": "hans-amplifier",
@@ -249,16 +249,16 @@
       "id": "lisbeth",
       "title": "Lisbeth's Two Days",
       "category": "side",
-      "status": "active",
-      "region": "longsaddle",
+      "status": "resolved",
+      "region": "neverwinter",
       "giver": "",
       "owners": [
         "party"
       ],
       "factions": [],
       "stakes": "Lisbeth Crane is staying two days at her sister's.",
-      "lead": "She has a job lined up at The Flaunty Flagon.",
-      "lastSession": 26
+      "lead": "27 Kythorn: collected from the East Gate holding cell. Working at The Flaunty Flagon.",
+      "lastSession": 29
     },
     {
       "id": "onotaro-hat",
@@ -362,16 +362,16 @@
       "id": "pit-or-purse",
       "title": "Pit or Purse",
       "category": "personal",
-      "status": "active",
+      "status": "resolved",
       "region": "neverwinter",
       "giver": "Bracken Tull, for Lady Vessa Marrowmont",
       "owners": [
         "varsen"
       ],
       "factions": [],
-      "stakes": "Contract signed 26 Kythorn: win three fights at the Gullet and the 700-crown Gleamhammer debt is cleared, plus a 25% cut of earnings above a set mark. Yield (weapon down, both hands up) or die and the debt becomes three open-ended tasks for Marrowmont. Per Edrion: the paper is legitimate. Per Tull: a good show earns what they know about Varsen's sisters.",
-      "lead": "26 Kythorn: won fight 1 (Gannet Rook's crew) and fight 2 (Yara Two-Fist's crew). Final round after an hour's rest: a froghemoth. Gustav holds paid life insurance.",
-      "lastSession": 28
+      "stakes": "Contract signed 26 Kythorn: win three fights at the Gullet and the 700-crown Gleamhammer debt is cleared, plus 10% of the take above the first 700 gp. Yield (weapon down, both hands up) or die and the debt becomes three open-ended tasks for Marrowmont. Per Edrion: the paper is legitimate. Per Tull: a good show earns what they know about Varsen's sisters.",
+      "lead": "26 Kythorn: won fight 3 (a froghemoth). Brass Oakum burned the debt paper in the arena. Party's share of the take: 154 gp.",
+      "lastSession": 29
     },
     {
       "id": "salt-fire",
@@ -387,8 +387,8 @@
         "pale-lodge"
       ],
       "stakes": "Per the Lodge, false-god blight has settled on Neverwinter. Salt Fire reveals and tracks it. Use it in unusual places and report back.",
-      "lead": "A Huntmaster arrives around 27 Kythorn to discuss the mote and the Brightfire relic. Keep both secret until then.",
-      "lastSession": 27
+      "lead": "27 Kythorn: Huntmaster Virel met the party at the Rail; mote and Brightfire relic shown. Per Virel: the relic is an anchor, a map and a key; about 15 remain; 4–5 motes would reactivate it. Use Salt Fire in unusual places and report back. Handout: Of the Seven and the Eighth (pending).",
+      "lastSession": 29
     },
     {
       "id": "seraph",
@@ -402,8 +402,8 @@
       ],
       "factions": [],
       "stakes": "Seraph woke in Facility 9. Handout: Project: Seraph – Player Facing.",
-      "lead": "Per Harwick: charged from a relic holding a piece of Bast, killed most of the room at its trials, may still be beneath Suzail.",
-      "lastSession": 23
+      "lead": "Per Harwick: charged from a relic holding a piece of Bast, killed most of the room at its trials, may still be beneath Suzail. Per Virel: an \"abomination\"; that it spared the party is rare, but some false gods have been reported to act without malice.",
+      "lastSession": 29
     },
     {
       "id": "griffons-nest",
@@ -481,8 +481,8 @@
       ],
       "factions": [],
       "stakes": "Five cultists in the cave below Secumber stabbed themselves to feed a statue, releasing the Unlit. The party destroyed it and kept the green mote it left. Handout: The Quiet Codex — The First Verse (Of Noise).",
-      "lead": "The lead cultist's pamphlet ends: 'The world will not end. It will exhale.' A sixth man had the Covenant's mark behind his left ear and the first chapter of a credo. The green mote was shown to a Pale Lodge Herald, 25 Kythorn (see Salt Fire).",
-      "lastSession": 27
+      "lead": "The lead cultist's pamphlet ends: 'The world will not end. It will exhale.' A sixth man had the Covenant's mark behind his left ear and the first chapter of a credo. The green mote was shown to a Pale Lodge Herald, 25 Kythorn (see Salt Fire). Per Virel, 27 Kythorn: the mote is true Titan essence. In the Aetherfold the Covenant operates as the Silicant Council. Varric Morvain has lived thousands of years, worships the Pale Regent, and is the greatest threat on this plane. Mass gatherings of faith can raise a Titan echo or open a rift to the Aetherfold. Crimson Magistone does not occur naturally; it is corrupted green \"life stone\".",
+      "lastSession": 29
     },
     {
       "id": "harwick",
@@ -512,8 +512,8 @@
       ],
       "factions": [],
       "stakes": "The twins own the former Marrowgate Salon on Blacklake and plan to open a tavern and inn. Per Osric Tolliver: seven owners in nine years, 'a room that never feels empty', furnishings stay put.",
-      "lead": "Deed signed 25 Kythorn. The twins went there that night.",
-      "lastSession": 28
+      "lead": "27 Kythorn: first visit. Run-down; harp lounge, wet bar, hearth lounge, loft, patio with boat dock on Blacklake. Lisbeth is getting it into shape. Loan from the Bank of Neverwinter: 1,000 gp at 2% a year over 10 years, monthly payments from 1 Eleasis, made by Lisbeth.",
+      "lastSession": 29
     },
     {
       "id": "crag-frame",
@@ -529,6 +529,21 @@
       "stakes": "Carver has claimed the Radiant Frame in Griffon's Nest.",
       "lead": "Left under the Crag with instructions for moving it to the surface.",
       "lastSession": 26
+    },
+    {
+      "id": "good-neighbor",
+      "title": "The Good Neighbor",
+      "category": "main",
+      "status": "active",
+      "region": "moonshae",
+      "giver": "",
+      "owners": [
+        "party"
+      ],
+      "factions": [],
+      "stakes": "Varsen and Onotaro each carry a Good Neighbor coin, given with talk of gatherings and teachings in the Moonshaes.",
+      "lead": "Per Virel: the coin's sun lines up with House Morvain's seal (a rising sun ringed by a thousand hands) on a City of Shade document. He warns that large gatherings of faith can be misused.",
+      "lastSession": 29
     },
     {
       "id": "green-harvest",
@@ -560,8 +575,8 @@
         "pale-lodge"
       ],
       "stakes": "Find the Pale Lodge's missing Pursuant near Norfinn Lake. Payment: one question, one true answer.",
-      "lead": "On completion, Carver is introduced to a soul-splitting teacher.",
-      "lastSession": 16
+      "lead": "Per Virel, 27 Kythorn: the Lodge adherent is missing on Norland; villagers report effigies washing ashore and a god they don't know. Per Virel, the effigies are for the Pale Regent. On completion, Carver is introduced to a soul-splitting teacher.",
+      "lastSession": 29
     },
     {
       "id": "griffon-tithe",
@@ -596,6 +611,23 @@
       "lastSession": 21
     },
     {
+      "id": "heralds-maker",
+      "title": "The Heralds' Maker",
+      "category": "personal",
+      "status": "active",
+      "region": "",
+      "giver": "Huntmaster Virel",
+      "owners": [
+        "carver"
+      ],
+      "factions": [
+        "pale-lodge"
+      ],
+      "stakes": "Carver asked for the Lodge's promised Herald-making. Per Virel: Huntmaster Krayt of the East made the Heralds and would teach loyal Lodge members.",
+      "lead": "Krayt is on the border of the Eastern Kingdoms and the Beastlands. Per Virel, the party will meet him soon.",
+      "lastSession": 29
+    },
+    {
       "id": "hush",
       "title": "The Hush",
       "category": "faction",
@@ -626,8 +658,8 @@
         "house-vaelcrest"
       ],
       "stakes": "A six-crew submersible. Board the Crown blockade's flagship during the bombing and take its orders, valuables and items before it sinks.",
-      "lead": "Answer Edrion by the morning of 28 Kythorn.",
-      "lastSession": 28
+      "lead": "All six will take part. Report to Chief Engineer Odalric Fenwhistle at first light, 28 Kythorn.",
+      "lastSession": 29
     },
     {
       "id": "longsaddle-charter",
@@ -727,7 +759,7 @@
       ],
       "stakes": "Edrion's airship, built in a hidden hangar east of Neverwinter, is meant to break the Crown blockade.",
       "lead": "Shown to Carver, Jasper, Varsen and Onotaro on the night of 25 Kythorn. Complete: 8 Riftborn cores (4 sockets empty), lift from a stored reverse-gravity spell, fire-resonance engine, grapeshot cannons, about 24 Magistone charges set to burst at the waterline. Bombing run on the evening of 28 Kythorn.",
-      "lastSession": 28
+      "lastSession": 29
     },
     {
       "id": "ninth-bulkhead",
@@ -807,9 +839,9 @@
         "varsen"
       ],
       "factions": [],
-      "stakes": "Varsen's sisters went to Neverwinter to bid on prospecting claims in the Moonshaes and Tethyr.",
-      "lead": "Per Edrion: the sisters were in Neverwinter; unknown whether they still are; his people are looking. Per elderly Tabaxi merchants in the Bazaar: they met the sisters, and the sisters' mother had gone missing while searching for her husband. Marrowmont's people claim to know more (see Pit or Purse).",
-      "lastSession": 28
+      "stakes": "Brenna and Brunna borrowed 700 gp from Marrowmont's Table to buy two prospecting claims from Neverwinter Survey. They agreed to weekly payments and made none.",
+      "lead": "Per Bracken Tull's file: claims near the Bukhara Spires in central Gwyneth (Moonshaes), and near Kagar, a large village in the southeast of House Amcathra's lands on the Eastern Kingdoms border, by the Golden Plains. The sisters left Neverwinter about a month ago. Per Edrion: his people are looking. Per Tabaxi merchants in the Bazaar: the sisters' mother went missing searching for her husband.",
+      "lastSession": 29
     },
     {
       "id": "onotaro-lost",
@@ -823,8 +855,8 @@
       ],
       "factions": [],
       "stakes": "Onotaro has no memory of his life before Strike Team Four.",
-      "lead": "25 Kythorn: a Hadozee who knew Onotaro met him in Neverwinter after appearing in his dreams. Said they both come from the Aetherfold; the Empire is \"merely a symptom of a greater disease\"; stay with the Pale Lodge; he will meet the party soon. Edrion has never seen a hadozee; his guards will watch for one. No sign of him in the city on 26 Kythorn.",
-      "lastSession": 28
+      "lead": "27 Kythorn: the hadozee is Huntmaster Virel of the West, one of four Huntmasters. Per Virel: they both come from the Aetherfold; Onotaro's role is \"much greater than a mere spelljammer\"; who he was is not Virel's to tell. Huntmaster Krayt of the East will tell him, and the party will meet Krayt soon.",
+      "lastSession": 29
     },
     {
       "id": "miners-guild-won",
@@ -902,6 +934,20 @@
       "teacher": ""
     },
     {
+      "id": "carver-nullstone-teleport",
+      "pc": "carver",
+      "kind": "magistone",
+      "title": "Nullstone teleportation",
+      "pickLabel": "",
+      "filled": 0,
+      "total": 10,
+      "needDays": 50,
+      "doneDays": 1,
+      "untracked": false,
+      "status": "active",
+      "teacher": "Huntmaster Virel (instruction)"
+    },
+    {
       "id": "carver-ring-reading",
       "pc": "carver",
       "kind": "magistone",
@@ -939,6 +985,20 @@
       "total": 1,
       "needDays": 5,
       "doneDays": 5,
+      "untracked": false,
+      "status": "complete",
+      "teacher": ""
+    },
+    {
+      "id": "gustav-cure-scrolls-3",
+      "pc": "gustav",
+      "kind": "scroll",
+      "title": "Scroll of Cure Wounds (1)",
+      "pickLabel": "1st level",
+      "filled": 1,
+      "total": 1,
+      "needDays": 1,
+      "doneDays": 1,
       "untracked": false,
       "status": "complete",
       "teacher": ""
@@ -1014,6 +1074,20 @@
       "teacher": "Carver (observation)"
     },
     {
+      "id": "onotaro-medium-armor",
+      "pc": "onotaro",
+      "kind": "training",
+      "title": "Medium armor",
+      "pickLabel": "Medium armor",
+      "filled": 1,
+      "total": 1,
+      "needDays": 5,
+      "doneDays": 5,
+      "untracked": true,
+      "status": "complete",
+      "teacher": ""
+    },
+    {
       "id": "onotaro-targeting",
       "pc": "onotaro",
       "kind": "other",
@@ -1084,16 +1158,18 @@
       "teacher": "Carver"
     }
   ],
-  "changesTitle": "After Session 28",
+  "changesTitle": "After Session 29",
   "changes": [
-    "Pit or Purse: contract signed; two of three Gullet fights won; the final round is a froghemoth",
-    "Gull Rock is now active: Lord Fennick Daunt's island for 1 gp once certified safe",
-    "The Proving is now active (Carver and Jasper): Flamerule's Problem is putting out Crown fire ships",
-    "The Redeemer's Core: the party has seen the finished airship; bombing run on the evening of 28 Kythorn",
-    "Varsen's Sisters: new leads from Edrion and the Bazaar Tabaxi",
-    "Owlbear Feathers: the giver is Archmaester Sulfuras Honnold, Circle of the Arcane Eye",
-    "New personal quest: A Lecture at the Collegium (Carver)",
-    "The date is now 26 Kythorn 1487 DR"
+    "Pit or Purse resolved: the Gleamhammer debt is cleared; party share 154 gp",
+    "Varsen's Sisters: claims near the Bukhara Spires (Gwyneth) and Kagar (Amcathra lands); the sisters left a month ago",
+    "New: The Heralds' Maker (Carver) — seek Huntmaster Krayt of the East",
+    "New on the board: The Good Neighbor — the coin matches House Morvain's seal",
+    "Salt Fire / Covenant of Dusk: Huntmaster Virel on Titan essence, relics, and the Pale Regent",
+    "What Onotaro Lost: Krayt of the East will tell Onotaro who he was",
+    "Lisbeth arrived; The Flaunty Flagon has a Bank of Neverwinter loan (1,000 gp)",
+    "The Lamprey: all six report to Fenwhistle at first light, 28 Kythorn",
+    "New pursuit: Carver's Nullstone teleportation (1/50 days)",
+    "Date: 27 Kythorn 1487 DR"
   ],
-  "changesId": "dcc67c52ae98"
+  "changesId": "768638250d21"
 }

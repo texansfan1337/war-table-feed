@@ -1,14 +1,14 @@
 {
   "schema": 1,
-  "generated": "2026-11-03T05:45:02+00:00",
+  "generated": "2026-11-17T05:48:45+00:00",
   "warTableUrl": "https://texansfan1337.github.io/war-table-feed/",
   "calendar": {
-    "label": "27 Kythorn 1487 DR",
+    "label": "28 Kythorn 1487 DR",
     "year": 1487,
     "month": "Kythorn",
-    "day": 27,
+    "day": 28,
     "fest": null,
-    "nextSession": 30
+    "nextSession": 31
   },
   "regions": {
     "longsaddle": "Longsaddle & Griffon's Nest",
@@ -648,7 +648,7 @@
       "id": "lamprey",
       "title": "The Lamprey",
       "category": "faction",
-      "status": "active",
+      "status": "resolved",
       "region": "neverwinter",
       "giver": "Lord Edrion Vaelcrest",
       "owners": [
@@ -658,8 +658,8 @@
         "house-vaelcrest"
       ],
       "stakes": "A six-crew submersible. Board the Crown blockade's flagship during the bombing and take its orders, valuables and items before it sinks.",
-      "lead": "All six will take part. Report to Chief Engineer Odalric Fenwhistle at first light, 28 Kythorn.",
-      "lastSession": 29
+      "lead": "28 Kythorn, before dawn: boarded the Crown's Patience from below. Took the ship's sealed papers (Handout: Recovered Documents), its treasury of 1,240 gp, a Necklace of Adaptation, a Trident of Fish Command, a Wand of Binding (party loot), a dark scrying mirror, 4 Magistone charges and 2 kegs of powder. Captured an officer and a charmed powder monkey. Left the ship burning, holed and sinking. Per the papers: the Crown has demanded fealty from Houses Silvershield, Amcathra and Stormweather; Lord Marshal Rennic Haldevar governs the Crimson territories from the Citadel of the Raven; a Crown governor holds House Brightwood's lands; the Crown knows of Neverwinter's airship and is working on countermeasures; Althin Vaross's work is nearing completion and the Crown wants to test it on an unwilling populace.",
+      "lastSession": 30
     },
     {
       "id": "longsaddle-charter",
@@ -712,6 +712,21 @@
       "lastSession": 15
     },
     {
+      "id": "patience-prisoner",
+      "title": "The Officer from the Patience",
+      "category": "side",
+      "status": "active",
+      "region": "neverwinter",
+      "giver": "",
+      "owners": [
+        "party"
+      ],
+      "factions": [],
+      "stakes": "An officer was reporting the attack to King Darius by mirror when the party broke in. Bound, gagged and carried off in the Lamprey.",
+      "lead": "28 Kythorn: in the party's custody.",
+      "lastSession": 30
+    },
+    {
       "id": "proving",
       "title": "The Proving",
       "category": "request",
@@ -758,8 +773,8 @@
         "house-vaelcrest"
       ],
       "stakes": "Edrion's airship, built in a hidden hangar east of Neverwinter, is meant to break the Crown blockade.",
-      "lead": "Shown to Carver, Jasper, Varsen and Onotaro on the night of 25 Kythorn. Complete: 8 Riftborn cores (4 sockets empty), lift from a stored reverse-gravity spell, fire-resonance engine, grapeshot cannons, about 24 Magistone charges set to burst at the waterline. Bombing run on the evening of 28 Kythorn.",
-      "lastSession": 29
+      "lead": "Shown to Carver, Jasper, Varsen and Onotaro on the night of 25 Kythorn. Complete: 8 Riftborn cores (4 sockets empty), lift from a stored reverse-gravity spell, fire-resonance engine, grapeshot cannons, about 24 Magistone charges set to burst at the waterline. Bombing run on the evening of 28 Kythorn. 28 Kythorn, before dawn: launched. Seen by the blockade coming in low over the water from the east.",
+      "lastSession": 30
     },
     {
       "id": "ninth-bulkhead",
@@ -825,8 +840,8 @@
       ],
       "factions": [],
       "stakes": "House Ashvain vanished from its Starmantle estate in 1484 DR with no bodies, struggle or arcane trace. Handout: Ashvain Concordance.",
-      "lead": "Per Harwick: Adrion and Selise were being sent to Facility 6 when he last heard; plans may have changed.",
-      "lastSession": 23
+      "lead": "Per Harwick: Adrion and Selise were being sent to Facility 6 when he last heard; plans may have changed. Per King Darius, 28 Kythorn (by scrying mirror): \"Your brother and sister ask after you… Your mother asks about you all the time.\" \"Adrion and Selise send you their best.\"",
+      "lastSession": 30
     },
     {
       "id": "varsens-voice",
@@ -1158,18 +1173,14 @@
       "teacher": "Carver"
     }
   ],
-  "changesTitle": "After Session 29",
+  "changesTitle": "After Session 30",
   "changes": [
-    "Pit or Purse resolved: the Gleamhammer debt is cleared; party share 154 gp",
-    "Varsen's Sisters: claims near the Bukhara Spires (Gwyneth) and Kagar (Amcathra lands); the sisters left a month ago",
-    "New: The Heralds' Maker (Carver) — seek Huntmaster Krayt of the East",
-    "New on the board: The Good Neighbor — the coin matches House Morvain's seal",
-    "Salt Fire / Covenant of Dusk: Huntmaster Virel on Titan essence, relics, and the Pale Regent",
-    "What Onotaro Lost: Krayt of the East will tell Onotaro who he was",
-    "Lisbeth arrived; The Flaunty Flagon has a Bank of Neverwinter loan (1,000 gp)",
-    "The Lamprey: all six report to Fenwhistle at first light, 28 Kythorn",
-    "New pursuit: Carver's Nullstone teleportation (1/50 days)",
-    "Date: 27 Kythorn 1487 DR"
+    "The Lamprey: completed. The Crown's Patience is sinking",
+    "New quest: The Officer from the Patience",
+    "Updated: The Redeemer's Core (launched)",
+    "Updated: The Vanished House",
+    "Handout: Recovered Documents",
+    "The date is now 28 Kythorn 1487 DR"
   ],
-  "changesId": "768638250d21"
+  "changesId": "128253d89f54"
 }

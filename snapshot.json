@@ -1,14 +1,14 @@
 {
   "schema": 1,
-  "generated": "2026-11-17T05:48:45+00:00",
+  "generated": "2026-11-24T05:19:31+00:00",
   "warTableUrl": "https://texansfan1337.github.io/war-table-feed/",
   "calendar": {
-    "label": "28 Kythorn 1487 DR",
+    "label": "29 Kythorn 1487 DR",
     "year": 1487,
     "month": "Kythorn",
-    "day": 28,
+    "day": 29,
     "fest": null,
-    "nextSession": 31
+    "nextSession": 32
   },
   "regions": {
     "longsaddle": "Longsaddle & Griffon's Nest",
@@ -211,8 +211,8 @@
       ],
       "factions": [],
       "stakes": "Daunt inherited Gull Rock from his great-aunt, Lady Odile Daunt. The harbor court condemned it last year, and the city still taxes it quarterly. Per Daunt: creatures attack anyone trying to remove them, there are mists, and dockworkers hear screams. Locals call it the Grey Maiden of Gull Rock. Reward: the island for 1 gp once it is certified safe.",
-      "lead": "Jasper accepted, 26 Kythorn. The party holds a ring of 5 keys to the island's buildings. Daunt is staying at the Beached Leviathan. 27 Kythorn: Jasper put it to the party; agreed for after the blockade.",
-      "lastSession": 29
+      "lead": "Jasper accepted, 26 Kythorn. The party holds a ring of 5 keys to the island's buildings. Daunt is staying at the Beached Leviathan. 27 Kythorn: Jasper put it to the party; agreed for after the blockade. 28 Kythorn: Jasper proposed it for the coming days; Varsen wants passage to Moray first. Undecided. The harbor stays closed for a few days.",
+      "lastSession": 31
     },
     {
       "id": "hans-amplifier",
@@ -403,7 +403,7 @@
       "factions": [],
       "stakes": "Seraph woke in Facility 9. Handout: Project: Seraph – Player Facing.",
       "lead": "Per Harwick: charged from a relic holding a piece of Bast, killed most of the room at its trials, may still be beneath Suzail. Per Virel: an \"abomination\"; that it spared the party is rare, but some false gods have been reported to act without malice.",
-      "lastSession": 29
+      "lastSession": 31
     },
     {
       "id": "griffons-nest",
@@ -512,8 +512,8 @@
       ],
       "factions": [],
       "stakes": "The twins own the former Marrowgate Salon on Blacklake and plan to open a tavern and inn. Per Osric Tolliver: seven owners in nine years, 'a room that never feels empty', furnishings stay put.",
-      "lead": "27 Kythorn: first visit. Run-down; harp lounge, wet bar, hearth lounge, loft, patio with boat dock on Blacklake. Lisbeth is getting it into shape. Loan from the Bank of Neverwinter: 1,000 gp at 2% a year over 10 years, monthly payments from 1 Eleasis, made by Lisbeth.",
-      "lastSession": 29
+      "lead": "27 Kythorn: first visit. Run-down; harp lounge, wet bar, hearth lounge, loft, patio with boat dock on Blacklake. Lisbeth is getting it into shape. Loan from the Bank of Neverwinter: 1,000 gp at 2% a year over 10 years, monthly payments from 1 Eleasis, made by Lisbeth. 28 Kythorn: Gustav invited Odessa Lark of the Silverleaf Apothecary to join as in-house apothecary. Her husband Mark died in the battle; she asked for time and said she could be interested.",
+      "lastSession": 31
     },
     {
       "id": "crag-frame",
@@ -658,8 +658,8 @@
         "house-vaelcrest"
       ],
       "stakes": "A six-crew submersible. Board the Crown blockade's flagship during the bombing and take its orders, valuables and items before it sinks.",
-      "lead": "28 Kythorn, before dawn: boarded the Crown's Patience from below. Took the ship's sealed papers (Handout: Recovered Documents), its treasury of 1,240 gp, a Necklace of Adaptation, a Trident of Fish Command, a Wand of Binding (party loot), a dark scrying mirror, 4 Magistone charges and 2 kegs of powder. Captured an officer and a charmed powder monkey. Left the ship burning, holed and sinking. Per the papers: the Crown has demanded fealty from Houses Silvershield, Amcathra and Stormweather; Lord Marshal Rennic Haldevar governs the Crimson territories from the Citadel of the Raven; a Crown governor holds House Brightwood's lands; the Crown knows of Neverwinter's airship and is working on countermeasures; Althin Vaross's work is nearing completion and the Crown wants to test it on an unwilling populace.",
-      "lastSession": 30
+      "lead": "28 Kythorn, before dawn: boarded the Crown's Patience from below. Took the ship's sealed papers (Handout: Recovered Documents), its treasury of 1,240 gp, a Necklace of Adaptation, a Trident of Fish Command, a Wand of Binding (party loot), a dark scrying mirror, 4 Magistone charges and 2 kegs of powder. Captured an officer and a charmed powder monkey. Left the ship burning, holed and sinking. Per the papers: the Crown has demanded fealty from Houses Silvershield, Amcathra and Stormweather; Lord Marshal Rennic Haldevar governs the Crimson territories from the Citadel of the Raven; a Crown governor holds House Brightwood's lands; the Crown knows of Neverwinter's airship and is working on countermeasures; Althin Vaross's work is nearing completion and the Crown wants to test it on an unwilling populace. Returned about 11 am, 28 Kythorn, all six aboard. Per Lord Edrion's letter that night: the party are named Defenders of Neverwinter (freedom of the harbor, a seal for their door, a standing table at any waterfront tavern).",
+      "lastSession": 31
     },
     {
       "id": "longsaddle-charter",
@@ -723,8 +723,8 @@
       ],
       "factions": [],
       "stakes": "An officer was reporting the attack to King Darius by mirror when the party broke in. Bound, gagged and carried off in the Lamprey.",
-      "lead": "28 Kythorn: in the party's custody.",
-      "lastSession": 30
+      "lead": "28 Kythorn: in the party's custody. 28 Kythorn, about 11 am: handed to a Neverwinter guard at the Lamprey's warehouse; a jailer was sent for.",
+      "lastSession": 31
     },
     {
       "id": "proving",
@@ -739,8 +739,8 @@
       ],
       "factions": [],
       "stakes": "Monthly Problem from the Vaelcrest Collegium; shops compete. Flamerule's Problem (Carver saw it early, asked to destroy the copy): a device to quickly put out Crown fire ships, usable by someone who is not resonant.",
-      "lead": "Opens 1 Flamerule. Carver plans to enter with elemental Magistone; Headmaster Gambling showed him the Problem early. Carver and Edrion agreed to share findings once the Proving is over.",
-      "lastSession": 28
+      "lead": "Opens 1 Flamerule. Carver plans to enter with elemental Magistone; Headmaster Gambling showed him the Problem early. Carver and Edrion agreed to share findings once the Proving is over. 28 Kythorn: Carver and Jasper began a device using the enhanced water Magistone from Tarn Suldaver; rough design done, more research needed before the first test.",
+      "lastSession": 31
     },
     {
       "id": "talfir",
@@ -763,7 +763,7 @@
       "id": "redeemer",
       "title": "The Redeemer's Core",
       "category": "faction",
-      "status": "active",
+      "status": "resolved",
       "region": "neverwinter",
       "giver": "Lord Edrion Vaelcrest, through Kael's deckhands",
       "owners": [
@@ -773,8 +773,8 @@
         "house-vaelcrest"
       ],
       "stakes": "Edrion's airship, built in a hidden hangar east of Neverwinter, is meant to break the Crown blockade.",
-      "lead": "Shown to Carver, Jasper, Varsen and Onotaro on the night of 25 Kythorn. Complete: 8 Riftborn cores (4 sockets empty), lift from a stored reverse-gravity spell, fire-resonance engine, grapeshot cannons, about 24 Magistone charges set to burst at the waterline. Bombing run on the evening of 28 Kythorn. 28 Kythorn, before dawn: launched. Seen by the blockade coming in low over the water from the east.",
-      "lastSession": 30
+      "lead": "Per Fenwhistle, 28 Kythorn: three bombing runs; one envelope holed; returned to its hangar. Crown line: 14 sunk, 5 burning, 2 aground, 3 scuttled and boarded. A Neverwinter frigate was lost to Crown mines. Lord Edrion flew aboard and took a splinter in the side (per his letter, not fatal). 61 Neverwinter marines killed.",
+      "lastSession": 31
     },
     {
       "id": "ninth-bulkhead",
@@ -841,7 +841,7 @@
       "factions": [],
       "stakes": "House Ashvain vanished from its Starmantle estate in 1484 DR with no bodies, struggle or arcane trace. Handout: Ashvain Concordance.",
       "lead": "Per Harwick: Adrion and Selise were being sent to Facility 6 when he last heard; plans may have changed. Per King Darius, 28 Kythorn (by scrying mirror): \"Your brother and sister ask after you… Your mother asks about you all the time.\" \"Adrion and Selise send you their best.\"",
-      "lastSession": 30
+      "lastSession": 31
     },
     {
       "id": "varsens-voice",
@@ -856,7 +856,7 @@
       "factions": [],
       "stakes": "Brenna and Brunna borrowed 700 gp from Marrowmont's Table to buy two prospecting claims from Neverwinter Survey. They agreed to weekly payments and made none.",
       "lead": "Per Bracken Tull's file: claims near the Bukhara Spires in central Gwyneth (Moonshaes), and near Kagar, a large village in the southeast of House Amcathra's lands on the Eastern Kingdoms border, by the Golden Plains. The sisters left Neverwinter about a month ago. Per Edrion: his people are looking. Per Tabaxi merchants in the Bazaar: the sisters' mother went missing searching for her husband.",
-      "lastSession": 29
+      "lastSession": 31
     },
     {
       "id": "onotaro-lost",
@@ -957,7 +957,7 @@
       "filled": 0,
       "total": 10,
       "needDays": 50,
-      "doneDays": 1,
+      "doneDays": 2,
       "untracked": false,
       "status": "active",
       "teacher": "Huntmaster Virel (instruction)"
@@ -1173,14 +1173,16 @@
       "teacher": "Carver"
     }
   ],
-  "changesTitle": "After Session 30",
+  "changesTitle": "After Session 31",
   "changes": [
-    "The Lamprey: completed. The Crown's Patience is sinking",
-    "New quest: The Officer from the Patience",
-    "Updated: The Redeemer's Core (launched)",
-    "Updated: The Vanished House",
-    "Handout: Recovered Documents",
-    "The date is now 28 Kythorn 1487 DR"
+    "The Redeemer's Core: completed. The Crown blockade is broken",
+    "Updated: The Lamprey (the party are named Defenders of Neverwinter)",
+    "Updated: The Officer from the Patience (handed to the guard)",
+    "Updated: The Proving (Carver and Jasper begin their device)",
+    "Updated: The Flaunty Flagon (Odessa Lark may join)",
+    "Updated: Gull Rock",
+    "Carver's Nullstone teleportation: 2 of 50 days",
+    "The date is now 29 Kythorn 1487 DR"
   ],
-  "changesId": "128253d89f54"
+  "changesId": "b36d4bdad229"
 }
